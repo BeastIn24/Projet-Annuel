@@ -13,7 +13,15 @@ class MatchupsTable :
                 print (self.table[i][j].getWinrate(), ' | ', end='')
             print('\n')
 
-parser = Parser()
-list = parser.getTable()
-matchupsTable = MatchupsTable(list[0], list[1])
-print(matchupsTable.__str__())
+    def isMatchupPositive (self, deck1, deck2):
+        i = self.deckList.index(deck1)
+        j = self.deckList.index(deck2)
+        if self.table[i][j].getWinrate() > 50:
+            return 1
+        elif self.table[i][j].getWinrate() == 50:
+            return 2
+        else :
+            return 0
+
+    def getDeckList(self):
+        return self.deckList
