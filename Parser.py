@@ -18,10 +18,10 @@ class Parser :
             deckList = []
             matchupsTable = []
             count = 1
-            for i in range(13):
+            for i in range(14):
                 deckList.append(decksFromSite[i].text)
                 matchup=[]
-                for j in range(13):
+                for j in range(14):
                     if matchupsFromSite[count].text == '' :
                         dperf = None
                         dmatch = None

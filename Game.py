@@ -35,13 +35,26 @@ class Game :
         return tierlist
 
     def firstTest (self, tierlist):
-        for i in range(0, len(tierlist)-1):
+        for i in range(0, len(tierlist - 1)):
             if self.matchupTable.isMatchupPositive(tierlist[i], tierlist[i+1]) < 1 :
                 return False
         return True
 
-
-
+    # Tester si aucun changement individuel n'est possible (augmenterait l'utilité d'un deck)
+    def isNashStable (self, tierlist):
+        for i in range(0, len(tierlist)):
+            deck = tierlist[i]
+            initUtility = deckUtility (deck, tierlist)
+            while (j < len(tierlist)) :
+                if (j != i):
+                    potentialTierList = tierlist.copy()
+                    potentialTierList.remove(deck)
+                    potentialTierList.insert(j, deck)
+                    potentialUtility = deckUtility(deck, potentialTierList)
+                    if(potentialUtility < initUtility):
+                        return False
+                j += 1
+        return True
 
 parser = Parser()
 list = parser.getTable()
@@ -50,3 +63,4 @@ G = Game(matchupTable)
 tlist = G.siler(matchupTable.getDeckList())
 print(tlist)
 print(G.firstTest(tlist))
+print(G.isNashStable(tlist))
