@@ -1,8 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-#from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
-#from selenium.webdriver.support.expected_conditions import presence_of_element_located
+from selenium.webdriver.support import expected_conditions as EC
 from Matchups import*
 
 class Parser :
@@ -11,17 +10,21 @@ class Parser :
         with webdriver.Chrome() as driver:
             wait = WebDriverWait(driver, 10)
             driver.get(url)
-            decksFromSite = driver.find_elements(By.CLASS_NAME, "name")
-            matchupsFromSite = driver.find_elements(By.CLASS_NAME, "dperf")
-            intervalsFromSite = driver.find_elements(By.CLASS_NAME, "dmatchr")
-            nbMatchesFromSite = driver.find_elements(By.CLASS_NAME, "dmatch")
+            element = WebDriverWait(driver, 10).until(
+                EC.presence_of_element_located((By.XPATH, "//div[@id='tablestats']//div[@class='dmatch']"))
+            )
+            decksFromSite = driver.find_elements(By.XPATH, "//div[@id='tablestats']//div[@class='square name right']//div[@class='name']")
+            matchupsFromSite = driver.find_elements(By.XPATH, "//div[@id='tablestats']//div[@class='dperf']")
+            intervalsFromSite = driver.find_elements(By.XPATH, "//div[@id='tablestats']//div[@class='dmatchr']")
+            nbMatchesFromSite = driver.find_elements(By.XPATH, "//div[@id='tablestats']//div[@class='dmatch']")
             deckList = []
             matchupsTable = []
-            count = 1
-            for i in range(14):
+            count = 0
+            taille = len(decksFromSite)
+            for i in range(taille):
                 deckList.append(decksFromSite[i].text)
                 matchup=[]
-                for j in range(14):
+                for j in range(taille):
                     if matchupsFromSite[count].text == '' :
                         dperf = None
                         dmatch = None
@@ -37,10 +40,9 @@ class Parser :
                     matchup.append(values)
                     count +=1
                 matchupsTable.append(matchup)
+            print(deckList)
             self.matchupsTable = matchupsTable
             self.deckList = deckList
-            print (deckList)
-            print (matchupsTable[10][11])
 
     def getTable(self) :
         return [self.deckList, self.matchupsTable]
