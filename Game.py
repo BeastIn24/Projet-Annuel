@@ -1,5 +1,7 @@
 from MatchupsTable import *
 import math
+from itertools import chain, combinations
+import sys
 
 class Game :
     def __init__ (self, matchupTable):
@@ -35,7 +37,7 @@ class Game :
         return tierlist
 
     def firstTest (self, tierlist):
-        for i in range(0, len(tierlist - 1)):
+        for i in range(0, len(tierlist)-1):
             if self.matchupTable.isMatchupPositive(tierlist[i], tierlist[i+1]) < 1 :
                 return False
         return True
@@ -44,23 +46,53 @@ class Game :
     def isNashStable (self, tierlist):
         for i in range(0, len(tierlist)):
             deck = tierlist[i]
-            initUtility = deckUtility (deck, tierlist)
+            initUtility = self.deckUtility(deck, tierlist)
+            j = 0
             while (j < len(tierlist)) :
                 if (j != i):
                     potentialTierList = tierlist.copy()
                     potentialTierList.remove(deck)
                     potentialTierList.insert(j, deck)
-                    potentialUtility = deckUtility(deck, potentialTierList)
-                    if(potentialUtility < initUtility):
+                    potentialUtility = self.deckUtility(deck, potentialTierList)
+                    if(potentialUtility > initUtility):
                         return False
                 j += 1
         return True
 
+    def powerSet(self, string):
+        subSets = []
+        n = len(string)
+        for i in range(0,n+1):
+            for element in combinations(string,i):
+                subSets.append(element)
+        return subSets
+
+    def isCoreStable (self, tierlist):
+        subSets = self.powerSet(tierlist)
+        for subSet in subSets :
+            listInitUtility = []
+            for deck in subSet :
+                listInitUtility.append(self.deckUtility(deck, tierlist))
+            j = 0
+            listPotentialUtility = []
+            while (j < len(tierlist)) :
+                potentialTierList = tierlist.copy()
+                for i in range (len(subSet), 0) :
+                    potentialTierList.remove(deck)
+                    potentialTierList.insert(j, deck)
+                for k in range(len(subSet)) :
+                    if(self.deckUtility(subSet[k], potentialTierList) > listInitUtility[k]):
+                        return False
+                j += 1
+        return True
+
+sys.setrecursionlimit(100000)
 parser = Parser()
 list = parser.getTable()
 matchupTable = MatchupsTable(list[0], list[1])
 G = Game(matchupTable)
 tlist = G.siler(matchupTable.getDeckList())
 print(tlist)
-print(G.firstTest(tlist))
-print(G.isNashStable(tlist))
+print("1st test : ", G.firstTest(tlist))
+print("Nash Stable :", G.isNashStable(tlist))
+print("Core Stable :", G.isCoreStable(tlist))

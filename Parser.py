@@ -40,7 +40,6 @@ class Parser :
                     matchup.append(values)
                     count +=1
                 matchupsTable.append(matchup)
-            print(deckList)
             self.matchupsTable = matchupsTable
             self.deckList = deckList
 
