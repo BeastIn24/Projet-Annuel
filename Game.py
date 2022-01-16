@@ -86,13 +86,32 @@ class Game :
                 j += 1
         return True
 
-sys.setrecursionlimit(100000)
-parser = Parser()
-list = parser.getTable()
-matchupTable = MatchupsTable(list[0], list[1])
-G = Game(matchupTable)
-tlist = G.siler(matchupTable.getDeckList())
-print(tlist)
-print("1st test : ", G.firstTest(tlist))
-print("Nash Stable :", G.isNashStable(tlist))
-print("Core Stable :", G.isCoreStable(tlist))
+# Main pour vérifier le fonctionnement des tests
+# sys.setrecursionlimit(100000)
+# parser = Parser()
+# list = parser.getTable()
+# matchupTable = MatchupsTable(list[0], list[1])
+# G = Game(matchupTable)
+# tlist = G.siler(matchupTable.getDeckList())
+# print(tlist)
+# print("1st test : ", G.firstTest(tlist))
+# print("Nash Stable :", G.isNashStable(tlist))
+# print("Core Stable :", G.isCoreStable(tlist))
+
+# Avec parsing de la matchupTable
+# parser = Parser()
+# list = parser.getTable()
+# matchupTable = MatchupsTable(list[0], list[1])
+# matchupTable.serialize()
+# G = Game(matchupTable)
+
+# Avec deserialisation de la matchupTable
+# sys.setrecursionlimit(100000)
+# matchupTable = MatchupsTable("saved_matchup_tables/test.json")
+# G = Game(matchupTable)
+# # print(G.matchupTable)
+# tlist = G.siler(matchupTable.getDeckList())
+# print(tlist)
+# print("1st test : ", G.firstTest(tlist))
+# print("Nash Stable :", G.isNashStable(tlist))
+# print("Core Stable :", G.isCoreStable(tlist))
