@@ -86,6 +86,35 @@ class Game :
                 j += 1
         return True
 
+    def arnold(self, tierlist):
+        tierQueue = []
+        siler = siler(tierlist)
+        for i in range(len(tierlist, 2)):
+            if self.matchupTable.isMatchupPositive(siler[i], siler[i-2]):
+                nouveauTier = [siler[i], siler[i-1], siler[i-2]]
+                tierQueue.insert(nouveauTier)
+        while len(tierQueue) != 0 :
+            # Comme on pop notre tier, il ne peut pas y avoir de tier autour ni au dessus lui ?
+            currentTier = tierQueue.pop()
+            potentialTier = currentTier.copy()
+            potentialTier.extend(tierQueue[-1])
+            potentialTier.extend(tierQueue[-2])
+            ok = True
+            for deck1 in potentialTier :
+                nbMuPos = 0
+
+                for deck2 in potentialTier :
+                    if deck1 != deck2 :
+                        if self.matchupTable.isMatchupPositive(deck1, deck2):
+                            nbMuPos += 1
+                if not (float(nbMuPos)/len(potentialTierList)) >= 0.5 :
+                     ok = False
+            if ok :
+                tierQueue.insert(potentialTier)
+            #Que faut il retourner ? comment obtient on la tierlist finale ?
+            return
+
+
 # Main pour vérifier le fonctionnement des tests
 # sys.setrecursionlimit(100000)
 # parser = Parser()

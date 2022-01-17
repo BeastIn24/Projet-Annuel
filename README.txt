@@ -9,4 +9,4 @@ python3 main.py save saved_matchup_tables/filename
 
 Pour lancer depuis ficher JSON sauvegardé :
 
-python3 main.py saved_matchup_tables/filename
+python3 main.py load saved_matchup_tables/filename
