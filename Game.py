@@ -1,6 +1,7 @@
 from MatchupsTable import *
 import math
 from itertools import chain, combinations
+from copy import deepcopy
 import sys
 
 class Game :
@@ -19,6 +20,7 @@ class Game :
 
     def deckUtility (self,deck, tierlist):
         utility = 0
+        deckTier = 0
         for t in range(len(tierlist)-1) :
             for d in range(len(tierlist[t])-1) :
                 if tierlist[t][d] == deck:
@@ -149,51 +151,69 @@ class Game :
                     j -= 3
                 else :
                     j -= 1
-                #Que faut il retourner ? comment obtient on la tierlist finale ?
             return tierQueue
 
     def CIS (self, tierlist):
         #Init du tab deck utilities
         initUtilities = []
-        for i in range(len(tierlist)-1):
+        for i in range(len(tierlist)):
             tierUtilities = []
-            for j in range(len(tierlist[i])-1):
+            for j in range(len(tierlist[i])):
                 deck = tierlist[i][j]
                 tierUtilities.append(self.deckUtility(deck, tierlist))
             initUtilities.append(tierUtilities)
 
         #Pour chaque mvt de deck
-        for i in range(len(tierlist)-1):
-            for j in range(len(tierlist[i])-1):
+        for i in range(len(tierlist)):
+            for j in range(len(tierlist[i])):
                 deck = tierlist[i][j]
                 #Calcule et comparaison des utilities des decks dans les tier de départ et d'arrivés
-                for k in range(len(tierlist)-1):
+                for k in range(len(tierlist)):
 
                     # Pour pas bouger notre deck dans le même tier
                     if i != k :
-                        potentialTierList = tierlist.copy()
-                        print(deck)
-                        print(tierlist)
+                        potentialTierList = deepcopy(tierlist)
                         potentialTierList[i].remove(deck)
                         potentialTierList[k].append(deck)
 
-                        potentialUtilities = initUtilities.copy()
+                        potentialUtilities = deepcopy(initUtilities)
                         potentialUtilities[i].remove(initUtilities[i][j])
                         potentialUtilities[k].append(initUtilities[i][j])
 
-                        #Pour le tier de départ
-                        for l in range(len(tierlist[i])-1):
-                            deck2 = tierlist[i][l]
-                            if self.deckUtility(deck2, potentialTierList) > potentialUtilities[i][l]:
-                                return False
+                        print("K : ", k)
+                        print("Apres swap de deck1 : ", deck)
                         #Pour le tier d'arrivé
-                        for m in range(len(tierlist[k])-1):
-                            deck2 = tierlist[k][m]
-                            if self.deckUtility(deck2, potentialTierList) > potentialUtilities[k][m]:
-                                return False
+                        isEchangeImpossible()
+                        #Pour le tier d'arrivé
+
             return True
+    # t => tier index in potentialTierList
+    def isEchangeImpossible(self, potentialTierList, deck, t){
+        #Pour le tier de départ
+        if (deck not in potentialTierList):
+            for l in range(len(potentialTierList[tierIndex])):
+                deck2 = potentialTierList[tierIndex][l]
 
-
+                print("Pour le tier",tierIndex," de départ : ")
+                print("deck2 : ", deck2, " pos : (",tierIndex,",",l,")")
+                print("initUtility : ", potentialUtilities[tierIndex][l])
+                print("newUtility : ", self.deckUtility(deck2, potentialTierList))
+                #Si un des decks du tier de départ perd de l'utilité, le mouvement est impossible
+                if self.deckUtility(deck2, potentialTierList) < potentialUtilities[tierIndex][l]:
+                    return False
+            return True
+        else :
+            for m in range(len(tierlist[k])):
+                deck2 = tierlist[k][m]
+                print("K : ", k)
+                print("Apres swap de deck1 : ", deck)
+                print("Pour le tier",k," de départ : ")
+                print("deck2 : ", deck2, " pos : (",k,",",m,")")
+                print("initUtility : ", potentialUtilities[k][m])
+                print("newUtility : ", self.deckUtility(deck2, potentialTierList))
+                if self.deckUtility(deck2, potentialTierList) > potentialUtilities[k][m]:
+                    return False
+    }
 
 # Main pour vérifier le fonctionnement des tests
 # sys.setrecursionlimit(100000)
