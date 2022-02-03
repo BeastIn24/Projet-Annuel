@@ -8,6 +8,8 @@ class Game :
     def __init__ (self, matchupTable):
         self.matchupTable = matchupTable
 
+
+
     def deckUtilitySingleton (self, deck, tierlist):
         p = tierlist.index(deck)
         utility = 0
@@ -17,6 +19,8 @@ class Game :
             elif self.matchupTable.isMatchupPositive(deck, tierlist[i]) == 0:
                 utility -= 1
         return utility
+
+
 
     def deckUtility (self,deck, tierlist):
         utility = 0
@@ -33,6 +37,8 @@ class Game :
                     elif self.matchupTable.isMatchupPositive(deck, tierlist[i][j]) == 0:
                         utility -= 1
         return utility
+
+
 
     def siler (self, tierlist):
         maxUtilityTierList = tierlist.copy()
@@ -53,11 +59,15 @@ class Game :
                 tierlist = maxUtilityTierList.copy()
         return tierlist
 
+
+
     def firstTest (self, tierlist):
         for i in range(0, len(tierlist)-1):
             if self.matchupTable.isMatchupPositive(tierlist[i], tierlist[i+1]) < 1 :
                 return False
         return True
+
+
 
     # Tester si aucun changement individuel n'est possible (augmenterait l'utilité d'un deck)
     def isNashStable (self, tierlist):
@@ -76,6 +86,8 @@ class Game :
                 j += 1
         return True
 
+
+
     def powerSet(self, string):
         subSets = []
         n = len(string)
@@ -83,6 +95,8 @@ class Game :
             for element in combinations(string,i):
                 subSets.append(element)
         return subSets
+
+
 
     def isCoreStable (self, tierlist):
         subSets = self.powerSet(tierlist)
@@ -102,6 +116,8 @@ class Game :
                         return False
                 j += 1
         return True
+
+
 
     def arnold(self, tierlist):
         tierQueue = []
@@ -153,6 +169,10 @@ class Game :
                     j -= 1
             return tierQueue
 
+
+
+    # Vérifie la stabilité contractuelle individuelle.
+    # Renvoie True si aucun deck de la tierlist ne peut changer de tier
     def CIS (self, tierlist):
         #Init du tab deck utilities
         initUtilities = []
@@ -163,57 +183,68 @@ class Game :
                 tierUtilities.append(self.deckUtility(deck, tierlist))
             initUtilities.append(tierUtilities)
 
-        #Pour chaque mvt de deck
+        # i : indice du tier du deck à bouger
         for i in range(len(tierlist)):
+            # j indice du deck à bouger dans la liste de départ
             for j in range(len(tierlist[i])):
+                # deck : nom du deck à bouger
                 deck = tierlist[i][j]
-                #Calcule et comparaison des utilities des decks dans les tier de départ et d'arrivés
+                # k : indice du tier d'arrivé
                 for k in range(len(tierlist)):
-
-                    # Pour pas bouger notre deck dans le même tier
+                    # Pour ne pas replacer notre deck dans le même tier
                     if i != k :
                         potentialTierList = deepcopy(tierlist)
                         potentialTierList[i].remove(deck)
                         potentialTierList[k].append(deck)
 
+                        #Modifie la matrice des utilités initiales.
+                        #Modifie la position de l'utilité du deck déviant pour que les indices des deux matrices restes cohérents.
+                        #Les valeurs restes inchangées.
                         potentialUtilities = deepcopy(initUtilities)
                         potentialUtilities[i].remove(initUtilities[i][j])
                         potentialUtilities[k].append(initUtilities[i][j])
 
                         print("K : ", k)
-                        print("Apres swap de deck1 : ", deck)
-                        #Pour le tier d'arrivé
-                        isEchangeImpossible()
-                        #Pour le tier d'arrivé
+                        print("Apres swap du deck : ", deck)
 
-            return True
-    # t => tier index in potentialTierList
-    def isEchangeImpossible(self, potentialTierList, deck, t){
-        #Pour le tier de départ
-        if (deck not in potentialTierList):
-            for l in range(len(potentialTierList[tierIndex])):
-                deck2 = potentialTierList[tierIndex][l]
+                        # Si au moins une déviation est possible notre tierlist n'est pas CIS.
+                        print("Matrice des utilitées avant déviation : ",initUtilities)
+                        if(self.isDeviationPossible(potentialTierList, potentialUtilities, i, k)):
+                            return False
+        return True
 
-                print("Pour le tier",tierIndex," de départ : ")
-                print("deck2 : ", deck2, " pos : (",tierIndex,",",l,")")
-                print("initUtility : ", potentialUtilities[tierIndex][l])
-                print("newUtility : ", self.deckUtility(deck2, potentialTierList))
-                #Si un des decks du tier de départ perd de l'utilité, le mouvement est impossible
-                if self.deckUtility(deck2, potentialTierList) < potentialUtilities[tierIndex][l]:
-                    return False
-            return True
-        else :
-            for m in range(len(tierlist[k])):
-                deck2 = tierlist[k][m]
-                print("K : ", k)
-                print("Apres swap de deck1 : ", deck)
-                print("Pour le tier",k," de départ : ")
-                print("deck2 : ", deck2, " pos : (",k,",",m,")")
-                print("initUtility : ", potentialUtilities[k][m])
-                print("newUtility : ", self.deckUtility(deck2, potentialTierList))
-                if self.deckUtility(deck2, potentialTierList) > potentialUtilities[k][m]:
-                    return False
-    }
+
+
+    # La déviation est possible si AUCUN deck des tiers concernés ne perd en utilité.
+    # potentialTierList => tierlist après déplacement de deck
+
+    # i => indice du tier de départ
+    # k => indice du tier d'arrivé
+    def isDeviationPossible(self, potentialTierList, potentialUtilities, i, k):
+        # l : indice des decks du tier de départ i dans potentialTierList
+        for l in range(len(potentialTierList[i])):
+            deck2 = potentialTierList[i][l]
+
+            print("Pour le tier",i," de départ : ")
+            print("deck2 : ", deck2, " pos : (",i,",",l,")")
+            print("initUtility : ", potentialUtilities[i][l])
+            print("newUtility : ", self.deckUtility(deck2, potentialTierList))
+            #Si un des decks du tier de départ perd en utilité, la déviation n'est pas possible
+            if self.deckUtility(deck2, potentialTierList) < potentialUtilities[i][l]:
+                return False
+        # m : indice des decks du le tier d'arrivé k dans potentialTierList
+        for m in range(len(potentialTierList[k])):
+            deck2 = potentialTierList[k][m]
+            print("Pour le tier",k," de départ : ")
+            print("deck2 : ", deck2, " pos : (",k,",",m,")")
+            print("initUtility : ", potentialUtilities[k][m])
+            print("newUtility : ", self.deckUtility(deck2, potentialTierList))
+            #Si un des decks du tier d'arrivé perd en utilité la déviation n'est pas possible
+            if self.deckUtility(deck2, potentialTierList) < potentialUtilities[k][m]:
+                return False
+        return True
+
+
 
 # Main pour vérifier le fonctionnement des tests
 # sys.setrecursionlimit(100000)
