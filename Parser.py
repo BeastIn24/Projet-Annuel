@@ -1,4 +1,5 @@
 from selenium import webdriver
+from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -7,7 +8,7 @@ from Matchups import*
 class Parser :
     def __init__(self):
         url = "https://mtgmeta.io/metagame"
-        with webdriver.Chrome() as driver:
+        with webdriver.Chrome(ChromeDriverManager().install()) as driver:
             wait = WebDriverWait(driver, 10)
             driver.get(url)
             element = WebDriverWait(driver, 10).until(

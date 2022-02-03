@@ -1,0 +1,1254 @@
+load
+['MONO-GREEN FOOD', 'NAYA ADVENTURES', 'GRUUL ADVENTURES', 'TEMUR ADVENTURES', 'MONO-RED AGGRO', 'JESKAI CYCLING', 'NAYA WINOTA', 'DIMIR ROGUES', 'IZZET DRAGONS', 'SULTAI ULTIMATUM (YORION)', 'DIMIR CONTROL (YORION)', 'TEMUR RAMP', 'AZORIUS BLINK (YORION)', 'ESPER DOOM (YORION)', 'RAKDOS SACRIFICE', 'MONO-WHITE AGGRO', 'MONO-GREEN AGGRO', 'RAKDOS MIDRANGE', 'DIMIR CONTROL']
+[['MONO-GREEN FOOD'], ['NAYA ADVENTURES'], ['GRUUL ADVENTURES'], ['TEMUR ADVENTURES'], ['MONO-RED AGGRO'], ['JESKAI CYCLING'], ['NAYA WINOTA'], ['DIMIR ROGUES'], ['IZZET DRAGONS'], ['SULTAI ULTIMATUM (YORION)'], ['DIMIR CONTROL (YORION)'], ['TEMUR RAMP'], ['AZORIUS BLINK (YORION)'], ['ESPER DOOM (YORION)'], ['RAKDOS SACRIFICE'], ['MONO-WHITE AGGRO'], ['MONO-GREEN AGGRO'], ['RAKDOS MIDRANGE'], ['DIMIR CONTROL']]
+i avant :  0
+k avant :  0
+i avant :  0
+k avant :  1
+K :  1
+Apres swap du deck :  MONO-GREEN FOOD
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[], [7, 6], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Pour le tier 1  d'arrivée : 
+deck2 :  NAYA ADVENTURES  pos : ( 1 , 0 )
+initUtility :  7
+newUtility :  6
+i avant :  0
+k avant :  2
+K :  2
+Apres swap du deck :  MONO-GREEN FOOD
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[], [7], [10, 6], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Pour le tier 2  d'arrivée : 
+deck2 :  GRUUL ADVENTURES  pos : ( 2 , 0 )
+initUtility :  10
+newUtility :  9
+i avant :  0
+k avant :  3
+K :  3
+Apres swap du deck :  MONO-GREEN FOOD
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[], [7], [10], [11, 6], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Pour le tier 3  d'arrivée : 
+deck2 :  TEMUR ADVENTURES  pos : ( 3 , 0 )
+initUtility :  11
+newUtility :  12
+Pour le tier 3  d'arrivée : 
+deck2 :  MONO-GREEN FOOD  pos : ( 3 , 1 )
+initUtility :  6
+newUtility :  4
+i avant :  0
+k avant :  4
+K :  4
+Apres swap du deck :  MONO-GREEN FOOD
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[], [7], [10], [11], [4, 6], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Pour le tier 4  d'arrivée : 
+deck2 :  MONO-RED AGGRO  pos : ( 4 , 0 )
+initUtility :  4
+newUtility :  3
+i avant :  0
+k avant :  5
+K :  5
+Apres swap du deck :  MONO-GREEN FOOD
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[], [7], [10], [11], [4], [9, 6], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Pour le tier 5  d'arrivée : 
+deck2 :  JESKAI CYCLING  pos : ( 5 , 0 )
+initUtility :  9
+newUtility :  8
+i avant :  0
+k avant :  6
+K :  6
+Apres swap du deck :  MONO-GREEN FOOD
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[], [7], [10], [11], [4], [9], [4, 6], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Pour le tier 6  d'arrivée : 
+deck2 :  NAYA WINOTA  pos : ( 6 , 0 )
+initUtility :  4
+newUtility :  5
+Pour le tier 6  d'arrivée : 
+deck2 :  MONO-GREEN FOOD  pos : ( 6 , 1 )
+initUtility :  6
+newUtility :  3
+i avant :  0
+k avant :  7
+K :  7
+Apres swap du deck :  MONO-GREEN FOOD
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[], [7], [10], [11], [4], [9], [4], [5, 6], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Pour le tier 7  d'arrivée : 
+deck2 :  DIMIR ROGUES  pos : ( 7 , 0 )
+initUtility :  5
+newUtility :  4
+i avant :  0
+k avant :  8
+K :  8
+Apres swap du deck :  MONO-GREEN FOOD
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[], [7], [10], [11], [4], [9], [4], [5], [2, 6], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Pour le tier 8  d'arrivée : 
+deck2 :  IZZET DRAGONS  pos : ( 8 , 0 )
+initUtility :  2
+newUtility :  1
+i avant :  0
+k avant :  9
+K :  9
+Apres swap du deck :  MONO-GREEN FOOD
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[], [7], [10], [11], [4], [9], [4], [5], [2], [3, 6], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Pour le tier 9  d'arrivée : 
+deck2 :  SULTAI ULTIMATUM (YORION)  pos : ( 9 , 0 )
+initUtility :  3
+newUtility :  4
+Pour le tier 9  d'arrivée : 
+deck2 :  MONO-GREEN FOOD  pos : ( 9 , 1 )
+initUtility :  6
+newUtility :  2
+i avant :  0
+k avant :  10
+K :  10
+Apres swap du deck :  MONO-GREEN FOOD
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4, 6], [3], [2], [5], [4], [3], [2], [1], [0]]
+Pour le tier 10  d'arrivée : 
+deck2 :  DIMIR CONTROL (YORION)  pos : ( 10 , 0 )
+initUtility :  4
+newUtility :  3
+i avant :  0
+k avant :  11
+K :  11
+Apres swap du deck :  MONO-GREEN FOOD
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3, 6], [2], [5], [4], [3], [2], [1], [0]]
+Pour le tier 11  d'arrivée : 
+deck2 :  TEMUR RAMP  pos : ( 11 , 0 )
+initUtility :  3
+newUtility :  4
+Pour le tier 11  d'arrivée : 
+deck2 :  MONO-GREEN FOOD  pos : ( 11 , 1 )
+initUtility :  6
+newUtility :  2
+i avant :  0
+k avant :  12
+K :  12
+Apres swap du deck :  MONO-GREEN FOOD
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2, 6], [5], [4], [3], [2], [1], [0]]
+Pour le tier 12  d'arrivée : 
+deck2 :  AZORIUS BLINK (YORION)  pos : ( 12 , 0 )
+initUtility :  2
+newUtility :  1
+i avant :  0
+k avant :  13
+K :  13
+Apres swap du deck :  MONO-GREEN FOOD
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5, 6], [4], [3], [2], [1], [0]]
+Pour le tier 13  d'arrivée : 
+deck2 :  ESPER DOOM (YORION)  pos : ( 13 , 0 )
+initUtility :  5
+newUtility :  4
+i avant :  0
+k avant :  14
+K :  14
+Apres swap du deck :  MONO-GREEN FOOD
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4, 6], [3], [2], [1], [0]]
+Pour le tier 14  d'arrivée : 
+deck2 :  RAKDOS SACRIFICE  pos : ( 14 , 0 )
+initUtility :  4
+newUtility :  3
+i avant :  0
+k avant :  15
+K :  15
+Apres swap du deck :  MONO-GREEN FOOD
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3, 6], [2], [1], [0]]
+Pour le tier 15  d'arrivée : 
+deck2 :  MONO-WHITE AGGRO  pos : ( 15 , 0 )
+initUtility :  3
+newUtility :  4
+Pour le tier 15  d'arrivée : 
+deck2 :  MONO-GREEN FOOD  pos : ( 15 , 1 )
+initUtility :  6
+newUtility :  0
+i avant :  0
+k avant :  16
+K :  16
+Apres swap du deck :  MONO-GREEN FOOD
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2, 6], [1], [0]]
+Pour le tier 16  d'arrivée : 
+deck2 :  MONO-GREEN AGGRO  pos : ( 16 , 0 )
+initUtility :  2
+newUtility :  3
+Pour le tier 16  d'arrivée : 
+deck2 :  MONO-GREEN FOOD  pos : ( 16 , 1 )
+initUtility :  6
+newUtility :  1
+i avant :  0
+k avant :  17
+K :  17
+Apres swap du deck :  MONO-GREEN FOOD
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1, 6], [0]]
+Pour le tier 17  d'arrivée : 
+deck2 :  RAKDOS MIDRANGE  pos : ( 17 , 0 )
+initUtility :  1
+newUtility :  0
+i avant :  0
+k avant :  18
+K :  18
+Apres swap du deck :  MONO-GREEN FOOD
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0, 6]]
+Pour le tier 18  d'arrivée : 
+deck2 :  DIMIR CONTROL  pos : ( 18 , 0 )
+initUtility :  0
+newUtility :  -1
+i avant :  1
+k avant :  0
+K :  0
+Apres swap du deck :  NAYA ADVENTURES
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6, 7], [], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Pour le tier 0  d'arrivée : 
+deck2 :  MONO-GREEN FOOD  pos : ( 0 , 0 )
+initUtility :  6
+newUtility :  6
+Pour le tier 0  d'arrivée : 
+deck2 :  NAYA ADVENTURES  pos : ( 0 , 1 )
+initUtility :  7
+newUtility :  6
+i avant :  1
+k avant :  1
+i avant :  1
+k avant :  2
+K :  2
+Apres swap du deck :  NAYA ADVENTURES
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [], [10, 7], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Pour le tier 2  d'arrivée : 
+deck2 :  GRUUL ADVENTURES  pos : ( 2 , 0 )
+initUtility :  10
+newUtility :  9
+i avant :  1
+k avant :  3
+K :  3
+Apres swap du deck :  NAYA ADVENTURES
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [], [10], [11, 7], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Pour le tier 3  d'arrivée : 
+deck2 :  TEMUR ADVENTURES  pos : ( 3 , 0 )
+initUtility :  11
+newUtility :  10
+i avant :  1
+k avant :  4
+K :  4
+Apres swap du deck :  NAYA ADVENTURES
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [], [10], [11], [4, 7], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Pour le tier 4  d'arrivée : 
+deck2 :  MONO-RED AGGRO  pos : ( 4 , 0 )
+initUtility :  4
+newUtility :  3
+i avant :  1
+k avant :  5
+K :  5
+Apres swap du deck :  NAYA ADVENTURES
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [], [10], [11], [4], [9, 7], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Pour le tier 5  d'arrivée : 
+deck2 :  JESKAI CYCLING  pos : ( 5 , 0 )
+initUtility :  9
+newUtility :  8
+i avant :  1
+k avant :  6
+K :  6
+Apres swap du deck :  NAYA ADVENTURES
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [], [10], [11], [4], [9], [4, 7], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Pour le tier 6  d'arrivée : 
+deck2 :  NAYA WINOTA  pos : ( 6 , 0 )
+initUtility :  4
+newUtility :  5
+Pour le tier 6  d'arrivée : 
+deck2 :  NAYA ADVENTURES  pos : ( 6 , 1 )
+initUtility :  7
+newUtility :  3
+i avant :  1
+k avant :  7
+K :  7
+Apres swap du deck :  NAYA ADVENTURES
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [], [10], [11], [4], [9], [4], [5, 7], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Pour le tier 7  d'arrivée : 
+deck2 :  DIMIR ROGUES  pos : ( 7 , 0 )
+initUtility :  5
+newUtility :  6
+Pour le tier 7  d'arrivée : 
+deck2 :  NAYA ADVENTURES  pos : ( 7 , 1 )
+initUtility :  7
+newUtility :  4
+i avant :  1
+k avant :  8
+K :  8
+Apres swap du deck :  NAYA ADVENTURES
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [], [10], [11], [4], [9], [4], [5], [2, 7], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Pour le tier 8  d'arrivée : 
+deck2 :  IZZET DRAGONS  pos : ( 8 , 0 )
+initUtility :  2
+newUtility :  1
+i avant :  1
+k avant :  9
+K :  9
+Apres swap du deck :  NAYA ADVENTURES
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [], [10], [11], [4], [9], [4], [5], [2], [3, 7], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Pour le tier 9  d'arrivée : 
+deck2 :  SULTAI ULTIMATUM (YORION)  pos : ( 9 , 0 )
+initUtility :  3
+newUtility :  4
+Pour le tier 9  d'arrivée : 
+deck2 :  NAYA ADVENTURES  pos : ( 9 , 1 )
+initUtility :  7
+newUtility :  4
+i avant :  1
+k avant :  10
+K :  10
+Apres swap du deck :  NAYA ADVENTURES
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [], [10], [11], [4], [9], [4], [5], [2], [3], [4, 7], [3], [2], [5], [4], [3], [2], [1], [0]]
+Pour le tier 10  d'arrivée : 
+deck2 :  DIMIR CONTROL (YORION)  pos : ( 10 , 0 )
+initUtility :  4
+newUtility :  3
+i avant :  1
+k avant :  11
+K :  11
+Apres swap du deck :  NAYA ADVENTURES
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3, 7], [2], [5], [4], [3], [2], [1], [0]]
+Pour le tier 11  d'arrivée : 
+deck2 :  TEMUR RAMP  pos : ( 11 , 0 )
+initUtility :  3
+newUtility :  2
+i avant :  1
+k avant :  12
+K :  12
+Apres swap du deck :  NAYA ADVENTURES
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2, 7], [5], [4], [3], [2], [1], [0]]
+Pour le tier 12  d'arrivée : 
+deck2 :  AZORIUS BLINK (YORION)  pos : ( 12 , 0 )
+initUtility :  2
+newUtility :  1
+i avant :  1
+k avant :  13
+K :  13
+Apres swap du deck :  NAYA ADVENTURES
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5, 7], [4], [3], [2], [1], [0]]
+Pour le tier 13  d'arrivée : 
+deck2 :  ESPER DOOM (YORION)  pos : ( 13 , 0 )
+initUtility :  5
+newUtility :  4
+i avant :  1
+k avant :  14
+K :  14
+Apres swap du deck :  NAYA ADVENTURES
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4, 7], [3], [2], [1], [0]]
+Pour le tier 14  d'arrivée : 
+deck2 :  RAKDOS SACRIFICE  pos : ( 14 , 0 )
+initUtility :  4
+newUtility :  5
+Pour le tier 14  d'arrivée : 
+deck2 :  NAYA ADVENTURES  pos : ( 14 , 1 )
+initUtility :  7
+newUtility :  1
+i avant :  1
+k avant :  15
+K :  15
+Apres swap du deck :  NAYA ADVENTURES
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3, 7], [2], [1], [0]]
+Pour le tier 15  d'arrivée : 
+deck2 :  MONO-WHITE AGGRO  pos : ( 15 , 0 )
+initUtility :  3
+newUtility :  2
+i avant :  1
+k avant :  16
+K :  16
+Apres swap du deck :  NAYA ADVENTURES
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2, 7], [1], [0]]
+Pour le tier 16  d'arrivée : 
+deck2 :  MONO-GREEN AGGRO  pos : ( 16 , 0 )
+initUtility :  2
+newUtility :  1
+i avant :  1
+k avant :  17
+K :  17
+Apres swap du deck :  NAYA ADVENTURES
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1, 7], [0]]
+Pour le tier 17  d'arrivée : 
+deck2 :  RAKDOS MIDRANGE  pos : ( 17 , 0 )
+initUtility :  1
+newUtility :  0
+i avant :  1
+k avant :  18
+K :  18
+Apres swap du deck :  NAYA ADVENTURES
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0, 7]]
+Pour le tier 18  d'arrivée : 
+deck2 :  DIMIR CONTROL  pos : ( 18 , 0 )
+initUtility :  0
+newUtility :  1
+Pour le tier 18  d'arrivée : 
+deck2 :  NAYA ADVENTURES  pos : ( 18 , 1 )
+initUtility :  7
+newUtility :  -1
+i avant :  2
+k avant :  0
+K :  0
+Apres swap du deck :  GRUUL ADVENTURES
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6, 10], [7], [], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Pour le tier 0  d'arrivée : 
+deck2 :  MONO-GREEN FOOD  pos : ( 0 , 0 )
+initUtility :  6
+newUtility :  6
+Pour le tier 0  d'arrivée : 
+deck2 :  GRUUL ADVENTURES  pos : ( 0 , 1 )
+initUtility :  10
+newUtility :  8
+i avant :  2
+k avant :  1
+K :  1
+Apres swap du deck :  GRUUL ADVENTURES
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7, 10], [], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Pour le tier 1  d'arrivée : 
+deck2 :  NAYA ADVENTURES  pos : ( 1 , 0 )
+initUtility :  7
+newUtility :  7
+Pour le tier 1  d'arrivée : 
+deck2 :  GRUUL ADVENTURES  pos : ( 1 , 1 )
+initUtility :  10
+newUtility :  9
+i avant :  2
+k avant :  2
+i avant :  2
+k avant :  3
+K :  3
+Apres swap du deck :  GRUUL ADVENTURES
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7], [], [11, 10], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Pour le tier 3  d'arrivée : 
+deck2 :  TEMUR ADVENTURES  pos : ( 3 , 0 )
+initUtility :  11
+newUtility :  10
+i avant :  2
+k avant :  4
+K :  4
+Apres swap du deck :  GRUUL ADVENTURES
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7], [], [11], [4, 10], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Pour le tier 4  d'arrivée : 
+deck2 :  MONO-RED AGGRO  pos : ( 4 , 0 )
+initUtility :  4
+newUtility :  3
+i avant :  2
+k avant :  5
+K :  5
+Apres swap du deck :  GRUUL ADVENTURES
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7], [], [11], [4], [9, 10], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Pour le tier 5  d'arrivée : 
+deck2 :  JESKAI CYCLING  pos : ( 5 , 0 )
+initUtility :  9
+newUtility :  8
+i avant :  2
+k avant :  6
+K :  6
+Apres swap du deck :  GRUUL ADVENTURES
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7], [], [11], [4], [9], [4, 10], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Pour le tier 6  d'arrivée : 
+deck2 :  NAYA WINOTA  pos : ( 6 , 0 )
+initUtility :  4
+newUtility :  3
+i avant :  2
+k avant :  7
+K :  7
+Apres swap du deck :  GRUUL ADVENTURES
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7], [], [11], [4], [9], [4], [5, 10], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Pour le tier 7  d'arrivée : 
+deck2 :  DIMIR ROGUES  pos : ( 7 , 0 )
+initUtility :  5
+newUtility :  4
+i avant :  2
+k avant :  8
+K :  8
+Apres swap du deck :  GRUUL ADVENTURES
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7], [], [11], [4], [9], [4], [5], [2, 10], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Pour le tier 8  d'arrivée : 
+deck2 :  IZZET DRAGONS  pos : ( 8 , 0 )
+initUtility :  2
+newUtility :  1
+i avant :  2
+k avant :  9
+K :  9
+Apres swap du deck :  GRUUL ADVENTURES
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7], [], [11], [4], [9], [4], [5], [2], [3, 10], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Pour le tier 9  d'arrivée : 
+deck2 :  SULTAI ULTIMATUM (YORION)  pos : ( 9 , 0 )
+initUtility :  3
+newUtility :  4
+Pour le tier 9  d'arrivée : 
+deck2 :  GRUUL ADVENTURES  pos : ( 9 , 1 )
+initUtility :  10
+newUtility :  4
+i avant :  2
+k avant :  10
+K :  10
+Apres swap du deck :  GRUUL ADVENTURES
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7], [], [11], [4], [9], [4], [5], [2], [3], [4, 10], [3], [2], [5], [4], [3], [2], [1], [0]]
+Pour le tier 10  d'arrivée : 
+deck2 :  DIMIR CONTROL (YORION)  pos : ( 10 , 0 )
+initUtility :  4
+newUtility :  3
+i avant :  2
+k avant :  11
+K :  11
+Apres swap du deck :  GRUUL ADVENTURES
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7], [], [11], [4], [9], [4], [5], [2], [3], [4], [3, 10], [2], [5], [4], [3], [2], [1], [0]]
+Pour le tier 11  d'arrivée : 
+deck2 :  TEMUR RAMP  pos : ( 11 , 0 )
+initUtility :  3
+newUtility :  2
+i avant :  2
+k avant :  12
+K :  12
+Apres swap du deck :  GRUUL ADVENTURES
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7], [], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2, 10], [5], [4], [3], [2], [1], [0]]
+Pour le tier 12  d'arrivée : 
+deck2 :  AZORIUS BLINK (YORION)  pos : ( 12 , 0 )
+initUtility :  2
+newUtility :  1
+i avant :  2
+k avant :  13
+K :  13
+Apres swap du deck :  GRUUL ADVENTURES
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7], [], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5, 10], [4], [3], [2], [1], [0]]
+Pour le tier 13  d'arrivée : 
+deck2 :  ESPER DOOM (YORION)  pos : ( 13 , 0 )
+initUtility :  5
+newUtility :  6
+Pour le tier 13  d'arrivée : 
+deck2 :  GRUUL ADVENTURES  pos : ( 13 , 1 )
+initUtility :  10
+newUtility :  2
+i avant :  2
+k avant :  14
+K :  14
+Apres swap du deck :  GRUUL ADVENTURES
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7], [], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4, 10], [3], [2], [1], [0]]
+Pour le tier 14  d'arrivée : 
+deck2 :  RAKDOS SACRIFICE  pos : ( 14 , 0 )
+initUtility :  4
+newUtility :  3
+i avant :  2
+k avant :  15
+K :  15
+Apres swap du deck :  GRUUL ADVENTURES
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7], [], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3, 10], [2], [1], [0]]
+Pour le tier 15  d'arrivée : 
+deck2 :  MONO-WHITE AGGRO  pos : ( 15 , 0 )
+initUtility :  3
+newUtility :  4
+Pour le tier 15  d'arrivée : 
+deck2 :  GRUUL ADVENTURES  pos : ( 15 , 1 )
+initUtility :  10
+newUtility :  2
+i avant :  2
+k avant :  16
+K :  16
+Apres swap du deck :  GRUUL ADVENTURES
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7], [], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2, 10], [1], [0]]
+Pour le tier 16  d'arrivée : 
+deck2 :  MONO-GREEN AGGRO  pos : ( 16 , 0 )
+initUtility :  2
+newUtility :  1
+i avant :  2
+k avant :  17
+K :  17
+Apres swap du deck :  GRUUL ADVENTURES
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7], [], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1, 10], [0]]
+Pour le tier 17  d'arrivée : 
+deck2 :  RAKDOS MIDRANGE  pos : ( 17 , 0 )
+initUtility :  1
+newUtility :  0
+i avant :  2
+k avant :  18
+K :  18
+Apres swap du deck :  GRUUL ADVENTURES
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7], [], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0, 10]]
+Pour le tier 18  d'arrivée : 
+deck2 :  DIMIR CONTROL  pos : ( 18 , 0 )
+initUtility :  0
+newUtility :  -1
+i avant :  3
+k avant :  0
+K :  0
+Apres swap du deck :  TEMUR ADVENTURES
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6, 11], [7], [10], [], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Pour le tier 0  d'arrivée : 
+deck2 :  MONO-GREEN FOOD  pos : ( 0 , 0 )
+initUtility :  6
+newUtility :  6
+Pour le tier 0  d'arrivée : 
+deck2 :  TEMUR ADVENTURES  pos : ( 0 , 1 )
+initUtility :  11
+newUtility :  10
+i avant :  3
+k avant :  1
+K :  1
+Apres swap du deck :  TEMUR ADVENTURES
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7, 11], [10], [], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Pour le tier 1  d'arrivée : 
+deck2 :  NAYA ADVENTURES  pos : ( 1 , 0 )
+initUtility :  7
+newUtility :  7
+Pour le tier 1  d'arrivée : 
+deck2 :  TEMUR ADVENTURES  pos : ( 1 , 1 )
+initUtility :  11
+newUtility :  9
+i avant :  3
+k avant :  2
+K :  2
+Apres swap du deck :  TEMUR ADVENTURES
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7], [10, 11], [], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Pour le tier 2  d'arrivée : 
+deck2 :  GRUUL ADVENTURES  pos : ( 2 , 0 )
+initUtility :  10
+newUtility :  10
+Pour le tier 2  d'arrivée : 
+deck2 :  TEMUR ADVENTURES  pos : ( 2 , 1 )
+initUtility :  11
+newUtility :  10
+i avant :  3
+k avant :  3
+i avant :  3
+k avant :  4
+K :  4
+Apres swap du deck :  TEMUR ADVENTURES
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7], [10], [], [4, 11], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Pour le tier 4  d'arrivée : 
+deck2 :  MONO-RED AGGRO  pos : ( 4 , 0 )
+initUtility :  4
+newUtility :  3
+i avant :  3
+k avant :  5
+K :  5
+Apres swap du deck :  TEMUR ADVENTURES
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7], [10], [], [4], [9, 11], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Pour le tier 5  d'arrivée : 
+deck2 :  JESKAI CYCLING  pos : ( 5 , 0 )
+initUtility :  9
+newUtility :  8
+i avant :  3
+k avant :  6
+K :  6
+Apres swap du deck :  TEMUR ADVENTURES
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7], [10], [], [4], [9], [4, 11], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Pour le tier 6  d'arrivée : 
+deck2 :  NAYA WINOTA  pos : ( 6 , 0 )
+initUtility :  4
+newUtility :  5
+Pour le tier 6  d'arrivée : 
+deck2 :  TEMUR ADVENTURES  pos : ( 6 , 1 )
+initUtility :  11
+newUtility :  9
+i avant :  3
+k avant :  7
+K :  7
+Apres swap du deck :  TEMUR ADVENTURES
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7], [10], [], [4], [9], [4], [5, 11], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Pour le tier 7  d'arrivée : 
+deck2 :  DIMIR ROGUES  pos : ( 7 , 0 )
+initUtility :  5
+newUtility :  6
+Pour le tier 7  d'arrivée : 
+deck2 :  TEMUR ADVENTURES  pos : ( 7 , 1 )
+initUtility :  11
+newUtility :  10
+i avant :  3
+k avant :  8
+K :  8
+Apres swap du deck :  TEMUR ADVENTURES
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7], [10], [], [4], [9], [4], [5], [2, 11], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Pour le tier 8  d'arrivée : 
+deck2 :  IZZET DRAGONS  pos : ( 8 , 0 )
+initUtility :  2
+newUtility :  1
+i avant :  3
+k avant :  9
+K :  9
+Apres swap du deck :  TEMUR ADVENTURES
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7], [10], [], [4], [9], [4], [5], [2], [3, 11], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Pour le tier 9  d'arrivée : 
+deck2 :  SULTAI ULTIMATUM (YORION)  pos : ( 9 , 0 )
+initUtility :  3
+newUtility :  2
+i avant :  3
+k avant :  10
+K :  10
+Apres swap du deck :  TEMUR ADVENTURES
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7], [10], [], [4], [9], [4], [5], [2], [3], [4, 11], [3], [2], [5], [4], [3], [2], [1], [0]]
+Pour le tier 10  d'arrivée : 
+deck2 :  DIMIR CONTROL (YORION)  pos : ( 10 , 0 )
+initUtility :  4
+newUtility :  3
+i avant :  3
+k avant :  11
+K :  11
+Apres swap du deck :  TEMUR ADVENTURES
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7], [10], [], [4], [9], [4], [5], [2], [3], [4], [3, 11], [2], [5], [4], [3], [2], [1], [0]]
+Pour le tier 11  d'arrivée : 
+deck2 :  TEMUR RAMP  pos : ( 11 , 0 )
+initUtility :  3
+newUtility :  2
+i avant :  3
+k avant :  12
+K :  12
+Apres swap du deck :  TEMUR ADVENTURES
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7], [10], [], [4], [9], [4], [5], [2], [3], [4], [3], [2, 11], [5], [4], [3], [2], [1], [0]]
+Pour le tier 12  d'arrivée : 
+deck2 :  AZORIUS BLINK (YORION)  pos : ( 12 , 0 )
+initUtility :  2
+newUtility :  1
+i avant :  3
+k avant :  13
+K :  13
+Apres swap du deck :  TEMUR ADVENTURES
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7], [10], [], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5, 11], [4], [3], [2], [1], [0]]
+Pour le tier 13  d'arrivée : 
+deck2 :  ESPER DOOM (YORION)  pos : ( 13 , 0 )
+initUtility :  5
+newUtility :  4
+i avant :  3
+k avant :  14
+K :  14
+Apres swap du deck :  TEMUR ADVENTURES
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7], [10], [], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4, 11], [3], [2], [1], [0]]
+Pour le tier 14  d'arrivée : 
+deck2 :  RAKDOS SACRIFICE  pos : ( 14 , 0 )
+initUtility :  4
+newUtility :  3
+i avant :  3
+k avant :  15
+K :  15
+Apres swap du deck :  TEMUR ADVENTURES
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7], [10], [], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3, 11], [2], [1], [0]]
+Pour le tier 15  d'arrivée : 
+deck2 :  MONO-WHITE AGGRO  pos : ( 15 , 0 )
+initUtility :  3
+newUtility :  2
+i avant :  3
+k avant :  16
+K :  16
+Apres swap du deck :  TEMUR ADVENTURES
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7], [10], [], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2, 11], [1], [0]]
+Pour le tier 16  d'arrivée : 
+deck2 :  MONO-GREEN AGGRO  pos : ( 16 , 0 )
+initUtility :  2
+newUtility :  1
+i avant :  3
+k avant :  17
+K :  17
+Apres swap du deck :  TEMUR ADVENTURES
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7], [10], [], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1, 11], [0]]
+Pour le tier 17  d'arrivée : 
+deck2 :  RAKDOS MIDRANGE  pos : ( 17 , 0 )
+initUtility :  1
+newUtility :  0
+i avant :  3
+k avant :  18
+K :  18
+Apres swap du deck :  TEMUR ADVENTURES
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7], [10], [], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0, 11]]
+Pour le tier 18  d'arrivée : 
+deck2 :  DIMIR CONTROL  pos : ( 18 , 0 )
+initUtility :  0
+newUtility :  -1
+i avant :  4
+k avant :  0
+K :  0
+Apres swap du deck :  MONO-RED AGGRO
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6, 4], [7], [10], [11], [], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Pour le tier 0  d'arrivée : 
+deck2 :  MONO-GREEN FOOD  pos : ( 0 , 0 )
+initUtility :  6
+newUtility :  6
+Pour le tier 0  d'arrivée : 
+deck2 :  MONO-RED AGGRO  pos : ( 0 , 1 )
+initUtility :  4
+newUtility :  0
+i avant :  4
+k avant :  1
+K :  1
+Apres swap du deck :  MONO-RED AGGRO
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7, 4], [10], [11], [], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Pour le tier 1  d'arrivée : 
+deck2 :  NAYA ADVENTURES  pos : ( 1 , 0 )
+initUtility :  7
+newUtility :  7
+Pour le tier 1  d'arrivée : 
+deck2 :  MONO-RED AGGRO  pos : ( 1 , 1 )
+initUtility :  4
+newUtility :  1
+i avant :  4
+k avant :  2
+K :  2
+Apres swap du deck :  MONO-RED AGGRO
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7], [10, 4], [11], [], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Pour le tier 2  d'arrivée : 
+deck2 :  GRUUL ADVENTURES  pos : ( 2 , 0 )
+initUtility :  10
+newUtility :  10
+Pour le tier 2  d'arrivée : 
+deck2 :  MONO-RED AGGRO  pos : ( 2 , 1 )
+initUtility :  4
+newUtility :  2
+i avant :  4
+k avant :  3
+K :  3
+Apres swap du deck :  MONO-RED AGGRO
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7], [10], [11, 4], [], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Pour le tier 3  d'arrivée : 
+deck2 :  TEMUR ADVENTURES  pos : ( 3 , 0 )
+initUtility :  11
+newUtility :  11
+Pour le tier 3  d'arrivée : 
+deck2 :  MONO-RED AGGRO  pos : ( 3 , 1 )
+initUtility :  4
+newUtility :  3
+i avant :  4
+k avant :  4
+i avant :  4
+k avant :  5
+K :  5
+Apres swap du deck :  MONO-RED AGGRO
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7], [10], [11], [], [9, 4], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Pour le tier 5  d'arrivée : 
+deck2 :  JESKAI CYCLING  pos : ( 5 , 0 )
+initUtility :  9
+newUtility :  8
+i avant :  4
+k avant :  6
+K :  6
+Apres swap du deck :  MONO-RED AGGRO
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7], [10], [11], [], [9], [4, 4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Pour le tier 6  d'arrivée : 
+deck2 :  NAYA WINOTA  pos : ( 6 , 0 )
+initUtility :  4
+newUtility :  3
+i avant :  4
+k avant :  7
+K :  7
+Apres swap du deck :  MONO-RED AGGRO
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7], [10], [11], [], [9], [4], [5, 4], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Pour le tier 7  d'arrivée : 
+deck2 :  DIMIR ROGUES  pos : ( 7 , 0 )
+initUtility :  5
+newUtility :  4
+i avant :  4
+k avant :  8
+K :  8
+Apres swap du deck :  MONO-RED AGGRO
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7], [10], [11], [], [9], [4], [5], [2, 4], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Pour le tier 8  d'arrivée : 
+deck2 :  IZZET DRAGONS  pos : ( 8 , 0 )
+initUtility :  2
+newUtility :  3
+Pour le tier 8  d'arrivée : 
+deck2 :  MONO-RED AGGRO  pos : ( 8 , 1 )
+initUtility :  4
+newUtility :  3
+i avant :  4
+k avant :  9
+K :  9
+Apres swap du deck :  MONO-RED AGGRO
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7], [10], [11], [], [9], [4], [5], [2], [3, 4], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Pour le tier 9  d'arrivée : 
+deck2 :  SULTAI ULTIMATUM (YORION)  pos : ( 9 , 0 )
+initUtility :  3
+newUtility :  2
+i avant :  4
+k avant :  10
+K :  10
+Apres swap du deck :  MONO-RED AGGRO
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7], [10], [11], [], [9], [4], [5], [2], [3], [4, 4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Pour le tier 10  d'arrivée : 
+deck2 :  DIMIR CONTROL (YORION)  pos : ( 10 , 0 )
+initUtility :  4
+newUtility :  3
+i avant :  4
+k avant :  11
+K :  11
+Apres swap du deck :  MONO-RED AGGRO
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7], [10], [11], [], [9], [4], [5], [2], [3], [4], [3, 4], [2], [5], [4], [3], [2], [1], [0]]
+Pour le tier 11  d'arrivée : 
+deck2 :  TEMUR RAMP  pos : ( 11 , 0 )
+initUtility :  3
+newUtility :  2
+i avant :  4
+k avant :  12
+K :  12
+Apres swap du deck :  MONO-RED AGGRO
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7], [10], [11], [], [9], [4], [5], [2], [3], [4], [3], [2, 4], [5], [4], [3], [2], [1], [0]]
+Pour le tier 12  d'arrivée : 
+deck2 :  AZORIUS BLINK (YORION)  pos : ( 12 , 0 )
+initUtility :  2
+newUtility :  1
+i avant :  4
+k avant :  13
+K :  13
+Apres swap du deck :  MONO-RED AGGRO
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7], [10], [11], [], [9], [4], [5], [2], [3], [4], [3], [2], [5, 4], [4], [3], [2], [1], [0]]
+Pour le tier 13  d'arrivée : 
+deck2 :  ESPER DOOM (YORION)  pos : ( 13 , 0 )
+initUtility :  5
+newUtility :  4
+i avant :  4
+k avant :  14
+K :  14
+Apres swap du deck :  MONO-RED AGGRO
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7], [10], [11], [], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4, 4], [3], [2], [1], [0]]
+Pour le tier 14  d'arrivée : 
+deck2 :  RAKDOS SACRIFICE  pos : ( 14 , 0 )
+initUtility :  4
+newUtility :  5
+Pour le tier 14  d'arrivée : 
+deck2 :  MONO-RED AGGRO  pos : ( 14 , 1 )
+initUtility :  4
+newUtility :  -1
+i avant :  4
+k avant :  15
+K :  15
+Apres swap du deck :  MONO-RED AGGRO
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7], [10], [11], [], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3, 4], [2], [1], [0]]
+Pour le tier 15  d'arrivée : 
+deck2 :  MONO-WHITE AGGRO  pos : ( 15 , 0 )
+initUtility :  3
+newUtility :  4
+Pour le tier 15  d'arrivée : 
+deck2 :  MONO-RED AGGRO  pos : ( 15 , 1 )
+initUtility :  4
+newUtility :  0
+i avant :  4
+k avant :  16
+K :  16
+Apres swap du deck :  MONO-RED AGGRO
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7], [10], [11], [], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2, 4], [1], [0]]
+Pour le tier 16  d'arrivée : 
+deck2 :  MONO-GREEN AGGRO  pos : ( 16 , 0 )
+initUtility :  2
+newUtility :  3
+Pour le tier 16  d'arrivée : 
+deck2 :  MONO-RED AGGRO  pos : ( 16 , 1 )
+initUtility :  4
+newUtility :  1
+i avant :  4
+k avant :  17
+K :  17
+Apres swap du deck :  MONO-RED AGGRO
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7], [10], [11], [], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1, 4], [0]]
+Pour le tier 17  d'arrivée : 
+deck2 :  RAKDOS MIDRANGE  pos : ( 17 , 0 )
+initUtility :  1
+newUtility :  0
+i avant :  4
+k avant :  18
+K :  18
+Apres swap du deck :  MONO-RED AGGRO
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7], [10], [11], [], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0, 4]]
+Pour le tier 18  d'arrivée : 
+deck2 :  DIMIR CONTROL  pos : ( 18 , 0 )
+initUtility :  0
+newUtility :  -1
+i avant :  5
+k avant :  0
+K :  0
+Apres swap du deck :  JESKAI CYCLING
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6, 9], [7], [10], [11], [4], [], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Pour le tier 0  d'arrivée : 
+deck2 :  MONO-GREEN FOOD  pos : ( 0 , 0 )
+initUtility :  6
+newUtility :  6
+Pour le tier 0  d'arrivée : 
+deck2 :  JESKAI CYCLING  pos : ( 0 , 1 )
+initUtility :  9
+newUtility :  4
+i avant :  5
+k avant :  1
+K :  1
+Apres swap du deck :  JESKAI CYCLING
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7, 9], [10], [11], [4], [], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Pour le tier 1  d'arrivée : 
+deck2 :  NAYA ADVENTURES  pos : ( 1 , 0 )
+initUtility :  7
+newUtility :  7
+Pour le tier 1  d'arrivée : 
+deck2 :  JESKAI CYCLING  pos : ( 1 , 1 )
+initUtility :  9
+newUtility :  5
+i avant :  5
+k avant :  2
+K :  2
+Apres swap du deck :  JESKAI CYCLING
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7], [10, 9], [11], [4], [], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Pour le tier 2  d'arrivée : 
+deck2 :  GRUUL ADVENTURES  pos : ( 2 , 0 )
+initUtility :  10
+newUtility :  10
+Pour le tier 2  d'arrivée : 
+deck2 :  JESKAI CYCLING  pos : ( 2 , 1 )
+initUtility :  9
+newUtility :  6
+i avant :  5
+k avant :  3
+K :  3
+Apres swap du deck :  JESKAI CYCLING
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7], [10], [11, 9], [4], [], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Pour le tier 3  d'arrivée : 
+deck2 :  TEMUR ADVENTURES  pos : ( 3 , 0 )
+initUtility :  11
+newUtility :  11
+Pour le tier 3  d'arrivée : 
+deck2 :  JESKAI CYCLING  pos : ( 3 , 1 )
+initUtility :  9
+newUtility :  7
+i avant :  5
+k avant :  4
+K :  4
+Apres swap du deck :  JESKAI CYCLING
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7], [10], [11], [4, 9], [], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Pour le tier 4  d'arrivée : 
+deck2 :  MONO-RED AGGRO  pos : ( 4 , 0 )
+initUtility :  4
+newUtility :  4
+Pour le tier 4  d'arrivée : 
+deck2 :  JESKAI CYCLING  pos : ( 4 , 1 )
+initUtility :  9
+newUtility :  8
+i avant :  5
+k avant :  5
+i avant :  5
+k avant :  6
+K :  6
+Apres swap du deck :  JESKAI CYCLING
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7], [10], [11], [4], [], [4, 9], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Pour le tier 6  d'arrivée : 
+deck2 :  NAYA WINOTA  pos : ( 6 , 0 )
+initUtility :  4
+newUtility :  3
+i avant :  5
+k avant :  7
+K :  7
+Apres swap du deck :  JESKAI CYCLING
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7], [10], [11], [4], [], [4], [5, 9], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Pour le tier 7  d'arrivée : 
+deck2 :  DIMIR ROGUES  pos : ( 7 , 0 )
+initUtility :  5
+newUtility :  4
+i avant :  5
+k avant :  8
+K :  8
+Apres swap du deck :  JESKAI CYCLING
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7], [10], [11], [4], [], [4], [5], [2, 9], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Pour le tier 8  d'arrivée : 
+deck2 :  IZZET DRAGONS  pos : ( 8 , 0 )
+initUtility :  2
+newUtility :  1
+i avant :  5
+k avant :  9
+K :  9
+Apres swap du deck :  JESKAI CYCLING
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7], [10], [11], [4], [], [4], [5], [2], [3, 9], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Pour le tier 9  d'arrivée : 
+deck2 :  SULTAI ULTIMATUM (YORION)  pos : ( 9 , 0 )
+initUtility :  3
+newUtility :  2
+i avant :  5
+k avant :  10
+K :  10
+Apres swap du deck :  JESKAI CYCLING
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7], [10], [11], [4], [], [4], [5], [2], [3], [4, 9], [3], [2], [5], [4], [3], [2], [1], [0]]
+Pour le tier 10  d'arrivée : 
+deck2 :  DIMIR CONTROL (YORION)  pos : ( 10 , 0 )
+initUtility :  4
+newUtility :  3
+i avant :  5
+k avant :  11
+K :  11
+Apres swap du deck :  JESKAI CYCLING
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7], [10], [11], [4], [], [4], [5], [2], [3], [4], [3, 9], [2], [5], [4], [3], [2], [1], [0]]
+Pour le tier 11  d'arrivée : 
+deck2 :  TEMUR RAMP  pos : ( 11 , 0 )
+initUtility :  3
+newUtility :  2
+i avant :  5
+k avant :  12
+K :  12
+Apres swap du deck :  JESKAI CYCLING
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7], [10], [11], [4], [], [4], [5], [2], [3], [4], [3], [2, 9], [5], [4], [3], [2], [1], [0]]
+Pour le tier 12  d'arrivée : 
+deck2 :  AZORIUS BLINK (YORION)  pos : ( 12 , 0 )
+initUtility :  2
+newUtility :  1
+i avant :  5
+k avant :  13
+K :  13
+Apres swap du deck :  JESKAI CYCLING
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7], [10], [11], [4], [], [4], [5], [2], [3], [4], [3], [2], [5, 9], [4], [3], [2], [1], [0]]
+Pour le tier 13  d'arrivée : 
+deck2 :  ESPER DOOM (YORION)  pos : ( 13 , 0 )
+initUtility :  5
+newUtility :  4
+i avant :  5
+k avant :  14
+K :  14
+Apres swap du deck :  JESKAI CYCLING
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7], [10], [11], [4], [], [4], [5], [2], [3], [4], [3], [2], [5], [4, 9], [3], [2], [1], [0]]
+Pour le tier 14  d'arrivée : 
+deck2 :  RAKDOS SACRIFICE  pos : ( 14 , 0 )
+initUtility :  4
+newUtility :  3
+i avant :  5
+k avant :  15
+K :  15
+Apres swap du deck :  JESKAI CYCLING
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7], [10], [11], [4], [], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3, 9], [2], [1], [0]]
+Pour le tier 15  d'arrivée : 
+deck2 :  MONO-WHITE AGGRO  pos : ( 15 , 0 )
+initUtility :  3
+newUtility :  2
+i avant :  5
+k avant :  16
+K :  16
+Apres swap du deck :  JESKAI CYCLING
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7], [10], [11], [4], [], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2, 9], [1], [0]]
+Pour le tier 16  d'arrivée : 
+deck2 :  MONO-GREEN AGGRO  pos : ( 16 , 0 )
+initUtility :  2
+newUtility :  3
+Pour le tier 16  d'arrivée : 
+deck2 :  JESKAI CYCLING  pos : ( 16 , 1 )
+initUtility :  9
+newUtility :  1
+i avant :  5
+k avant :  17
+K :  17
+Apres swap du deck :  JESKAI CYCLING
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7], [10], [11], [4], [], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1, 9], [0]]
+Pour le tier 17  d'arrivée : 
+deck2 :  RAKDOS MIDRANGE  pos : ( 17 , 0 )
+initUtility :  1
+newUtility :  0
+i avant :  5
+k avant :  18
+K :  18
+Apres swap du deck :  JESKAI CYCLING
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6], [7], [10], [11], [4], [], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0, 9]]
+Pour le tier 18  d'arrivée : 
+deck2 :  DIMIR CONTROL  pos : ( 18 , 0 )
+initUtility :  0
+newUtility :  -1
+i avant :  6
+k avant :  0
+K :  0
+Apres swap du deck :  NAYA WINOTA
+Matrice des utilitées avant déviation :  [[6], [7], [10], [11], [4], [9], [4], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Matrice des utilitées apress déviation :  [[6, 4], [7], [10], [11], [4], [9], [], [5], [2], [3], [4], [3], [2], [5], [4], [3], [2], [1], [0]]
+Pour le tier 0  d'arrivée : 
+deck2 :  MONO-GREEN FOOD  pos : ( 0 , 0 )
+initUtility :  6
+newUtility :  6
+Pour le tier 0  d'arrivée : 
+deck2 :  NAYA WINOTA  pos : ( 0 , 1 )
+initUtility :  4
+newUtility :  4
+False

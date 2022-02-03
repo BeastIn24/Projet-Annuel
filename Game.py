@@ -25,12 +25,12 @@ class Game :
     def deckUtility (self,deck, tierlist):
         utility = 0
         deckTier = 0
-        for t in range(len(tierlist)-1) :
-            for d in range(len(tierlist[t])-1) :
+        for t in range(len(tierlist)) :
+            for d in range(len(tierlist[t])) :
                 if tierlist[t][d] == deck:
                     deckTier = t
-        for i in range (deckTier, len(tierlist)-1):
-            for j in range(len(tierlist[i])-1):
+        for i in range (deckTier, len(tierlist)):
+            for j in range(len(tierlist[i])):
                 if deck != tierlist[i][j]:
                     if self.matchupTable.isMatchupPositive(deck, tierlist[i][j]) == 1:
                         utility += 1
@@ -43,7 +43,8 @@ class Game :
     def siler (self, tierlist):
         maxUtilityTierList = tierlist.copy()
         change = True
-        while change :
+        troplong = 0
+        while change and troplong < 400:
             change = False
             for deck in tierlist:
                 max = self.deckUtilitySingleton(deck, tierlist)
@@ -57,6 +58,7 @@ class Game :
                         maxUtilityTierList = potentialTierList.copy()
                         change = True
                 tierlist = maxUtilityTierList.copy()
+            troplong +=1
         return tierlist
 
 
@@ -122,6 +124,7 @@ class Game :
     def arnold(self, tierlist):
         tierQueue = []
         siler = self.siler(tierlist)
+        print(siler)
         i = len(tierlist)-1
         c = 0
         while i > 1:
@@ -192,6 +195,8 @@ class Game :
                 # k : indice du tier d'arrivé
                 for k in range(len(tierlist)):
                     # Pour ne pas replacer notre deck dans le même tier
+                    print("i avant : ", i)
+                    print("k avant : ", k)
                     if i != k :
                         potentialTierList = deepcopy(tierlist)
                         potentialTierList[i].remove(deck)
@@ -209,6 +214,7 @@ class Game :
 
                         # Si au moins une déviation est possible notre tierlist n'est pas CIS.
                         print("Matrice des utilitées avant déviation : ",initUtilities)
+                        print("Matrice des utilitées apress déviation : ",potentialUtilities)
                         if(self.isDeviationPossible(potentialTierList, potentialUtilities, i, k)):
                             return False
         return True
@@ -232,10 +238,10 @@ class Game :
             #Si un des decks du tier de départ perd en utilité, la déviation n'est pas possible
             if self.deckUtility(deck2, potentialTierList) < potentialUtilities[i][l]:
                 return False
-        # m : indice des decks du le tier d'arrivé k dans potentialTierList
+        # m : indice des decks du tier d'arrivé k dans potentialTierList
         for m in range(len(potentialTierList[k])):
             deck2 = potentialTierList[k][m]
-            print("Pour le tier",k," de départ : ")
+            print("Pour le tier",k," d'arrivée : ")
             print("deck2 : ", deck2, " pos : (",k,",",m,")")
             print("initUtility : ", potentialUtilities[k][m])
             print("newUtility : ", self.deckUtility(deck2, potentialTierList))

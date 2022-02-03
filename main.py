@@ -29,9 +29,10 @@ else:
 # computations
 sys.setrecursionlimit(100000)
 G = Game(matchupTable)
-tlist = G.siler(matchupTable.getDeckList())
+# print("ok")
+# tlist = G.siler(matchupTable.getDeckList())
+# print("2")
 tlist2 = G.arnold(matchupTable.getDeckList())
-print(tlist)
 print(tlist2)
 print(G.CIS(tlist2))
 #print("1st test : ", G.firstTest(tlist))
