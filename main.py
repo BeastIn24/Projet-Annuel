@@ -1,6 +1,7 @@
 from sys import argv
 from Parser import *
-from Game import *
+from ProbabilistGame import *
+from DeterministGame import *
 import json
 
 #Loading of matchupTable (different depending on how the script was called)
@@ -28,13 +29,14 @@ else:
 
 # computations
 sys.setrecursionlimit(100000)
-G = Game(matchupTable)
+G = DeterministGame(matchupTable)
 # print("ok")
 # tlist = G.siler(matchupTable.getDeckList())
 # print("2")
 tlist2 = G.arnold(matchupTable.getDeckList())
 print(tlist2)
 print(G.CIS(tlist2))
+print(G.globalUtility(tlist2))
 #print("1st test : ", G.firstTest(tlist))
 #print("Nash Stable :", G.isNashStable(tlist))
 #print("Core Stable :", G.isCoreStable(tlist))

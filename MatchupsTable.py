@@ -29,14 +29,19 @@ class MatchupsTable :
                 print (self.table[i][j].getWinrate(), ' | ', end='')
             print('\n')
 
-    def isMatchupPositive (self, deck1, deck2):
+    def isMatchupPositive (self, deck1, deck2, epsilon = 0):
         i = self.deckList.index(deck1)
         j = self.deckList.index(deck2)
         # Arbitrairement on décide qu'un winrate de 50% correspond à un matchup negatif pour les deux
-        if self.table[i][j].getWinrate() > 50:
+        if self.table[i][j].getWinrate() > (50 - epsilon):
             return 1
         else :
             return 0
+
+    def matchupUtility (self, deck1, deck2):
+        i = self.deckList.index(deck1)
+        j = self.deckList.index(deck2)
+        return 2*(self.table[i][j].getWinrate()/100)-1
 
     def getDeckList(self):
         return self.deckList

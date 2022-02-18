@@ -4,47 +4,35 @@ from itertools import chain, combinations
 from copy import deepcopy
 import sys
 
-class Game :
-    def __init__ (self, matchupTable):
+class Game:
+
+    def __init__ (self, matchupTable, epsilon = 0):
         self.matchupTable = matchupTable
-
-
-
+        self.epsilon = epsilon
     def deckUtilitySingleton (self, deck, tierlist):
-        p = tierlist.index(deck)
-        utility = 0
-        for i in range (p+1, len(tierlist)):
-            if self.matchupTable.isMatchupPositive(deck, tierlist[i]) == 1:
-                utility += 1
-            elif self.matchupTable.isMatchupPositive(deck, tierlist[i]) == 0:
-                utility -= 1
-        return utility
-
-
+        pass
 
     def deckUtility (self,deck, tierlist):
-        utility = 0
-        deckTier = 0
-        for t in range(len(tierlist)) :
-            for d in range(len(tierlist[t])) :
-                if tierlist[t][d] == deck:
-                    deckTier = t
-        for i in range (deckTier, len(tierlist)):
-            for j in range(len(tierlist[i])):
-                if deck != tierlist[i][j]:
-                    if self.matchupTable.isMatchupPositive(deck, tierlist[i][j]) == 1:
-                        utility += 1
-                    elif self.matchupTable.isMatchupPositive(deck, tierlist[i][j]) == 0:
-                        utility -= 1
-        return utility
+        pass
 
+    def goodTierList (self, tierlist):
+        gtl = []
+        for d in tierlist :
+            gtl.append([d])
+        return gtl
 
+    def globalUtility (self, tierlist):
+        sum = 0
+        for i in range(len(tierlist)) :
+            for d in tierlist[i]:
+                sum += self.deckUtility(d, tierlist)
+        return sum
 
     def siler (self, tierlist):
         maxUtilityTierList = tierlist.copy()
         change = True
-        troplong = 0
-        while change and troplong < 400:
+        toolong = 0
+        while change and toolong < 400:
             change = False
             for deck in tierlist:
                 max = self.deckUtilitySingleton(deck, tierlist)
@@ -58,18 +46,14 @@ class Game :
                         maxUtilityTierList = potentialTierList.copy()
                         change = True
                 tierlist = maxUtilityTierList.copy()
-            troplong +=1
+            toolong +=1
         return tierlist
-
-
 
     def firstTest (self, tierlist):
         for i in range(0, len(tierlist)-1):
-            if self.matchupTable.isMatchupPositive(tierlist[i], tierlist[i+1]) < 1 :
+            if self.matchupTable.isMatchupPositive(tierlist[i], tierlist[i+1], self.epsilon) < 1 :
                 return False
         return True
-
-
 
     # Tester si aucun changement individuel n'est possible (augmenterait l'utilité d'un deck)
     def isNashStable (self, tierlist):
@@ -88,8 +72,6 @@ class Game :
                 j += 1
         return True
 
-
-
     def powerSet(self, string):
         subSets = []
         n = len(string)
@@ -97,8 +79,6 @@ class Game :
             for element in combinations(string,i):
                 subSets.append(element)
         return subSets
-
-
 
     def isCoreStable (self, tierlist):
         subSets = self.powerSet(tierlist)
@@ -119,8 +99,6 @@ class Game :
                 j += 1
         return True
 
-
-
     def arnold(self, tierlist):
         tierQueue = []
         siler = self.siler(tierlist)
@@ -128,7 +106,7 @@ class Game :
         i = len(tierlist)-1
         c = 0
         while i > 1:
-            if self.matchupTable.isMatchupPositive(siler[i], siler[i-2]):
+            if self.matchupTable.isMatchupPositive(siler[i], siler[i-2], self.epsilon):
                 nouveauTier = [siler[i], siler[i-1], siler[i-2]]
                 tierQueue.insert(0, nouveauTier)
                 i -= 3
@@ -157,7 +135,7 @@ class Game :
                     nbMuPos = 0
                     for deck2 in potentialTier :
                         if deck1 != deck2 :
-                            if self.matchupTable.isMatchupPositive(deck1, deck2):
+                            if self.matchupTable.isMatchupPositive(deck1, deck2, self.epsilon):
                                 nbMuPos += 1
                     if not (float(nbMuPos)/len(potentialTier)) >= 0.5 :
                          ok = False
@@ -171,8 +149,6 @@ class Game :
                 else :
                     j -= 1
             return tierQueue
-
-
 
     # Vérifie la stabilité contractuelle individuelle.
     # Renvoie True si aucun deck de la tierlist ne peut changer de tier
@@ -195,8 +171,8 @@ class Game :
                 # k : indice du tier d'arrivé
                 for k in range(len(tierlist)):
                     # Pour ne pas replacer notre deck dans le même tier
-                    print("i avant : ", i)
-                    print("k avant : ", k)
+                    #print("i avant : ", i)
+                    #print("k avant : ", k)
                     if i != k :
                         potentialTierList = deepcopy(tierlist)
                         potentialTierList[i].remove(deck)
@@ -209,17 +185,15 @@ class Game :
                         potentialUtilities[i].remove(initUtilities[i][j])
                         potentialUtilities[k].append(initUtilities[i][j])
 
-                        print("K : ", k)
-                        print("Apres swap du deck : ", deck)
+                        #print("K : ", k)
+                        #print("Apres swap du deck : ", deck)
 
                         # Si au moins une déviation est possible notre tierlist n'est pas CIS.
-                        print("Matrice des utilitées avant déviation : ",initUtilities)
-                        print("Matrice des utilitées apress déviation : ",potentialUtilities)
+                        #print("Matrice des utilitées avant déviation : ",initUtilities)
+                        #print("Matrice des utilitées apress déviation : ",potentialUtilities)
                         if(self.isDeviationPossible(potentialTierList, potentialUtilities, i, k)):
                             return False
         return True
-
-
 
     # La déviation est possible si AUCUN deck des tiers concernés ne perd en utilité.
     # potentialTierList => tierlist après déplacement de deck
@@ -231,53 +205,21 @@ class Game :
         for l in range(len(potentialTierList[i])):
             deck2 = potentialTierList[i][l]
 
-            print("Pour le tier",i," de départ : ")
-            print("deck2 : ", deck2, " pos : (",i,",",l,")")
-            print("initUtility : ", potentialUtilities[i][l])
-            print("newUtility : ", self.deckUtility(deck2, potentialTierList))
+            #print("Pour le tier",i," de départ : ")
+            #print("deck2 : ", deck2, " pos : (",i,",",l,")")
+            #print("initUtility : ", potentialUtilities[i][l])
+            #print("newUtility : ", self.deckUtility(deck2, potentialTierList))
             #Si un des decks du tier de départ perd en utilité, la déviation n'est pas possible
             if self.deckUtility(deck2, potentialTierList) < potentialUtilities[i][l]:
                 return False
         # m : indice des decks du tier d'arrivé k dans potentialTierList
         for m in range(len(potentialTierList[k])):
             deck2 = potentialTierList[k][m]
-            print("Pour le tier",k," d'arrivée : ")
-            print("deck2 : ", deck2, " pos : (",k,",",m,")")
-            print("initUtility : ", potentialUtilities[k][m])
-            print("newUtility : ", self.deckUtility(deck2, potentialTierList))
+            #print("Pour le tier",k," d'arrivée : ")
+            #print("deck2 : ", deck2, " pos : (",k,",",m,")")
+            #print("initUtility : ", potentialUtilities[k][m])
+            #print("newUtility : ", self.deckUtility(deck2, potentialTierList))
             #Si un des decks du tier d'arrivé perd en utilité la déviation n'est pas possible
             if self.deckUtility(deck2, potentialTierList) < potentialUtilities[k][m]:
                 return False
         return True
-
-
-
-# Main pour vérifier le fonctionnement des tests
-# sys.setrecursionlimit(100000)
-# parser = Parser()
-# list = parser.getTable()
-# matchupTable = MatchupsTable(list[0], list[1])
-# G = Game(matchupTable)
-# tlist = G.siler(matchupTable.getDeckList())
-# print(tlist)
-# print("1st test : ", G.firstTest(tlist))
-# print("Nash Stable :", G.isNashStable(tlist))
-# print("Core Stable :", G.isCoreStable(tlist))
-
-# Avec parsing de la matchupTable
-# parser = Parser()
-# list = parser.getTable()
-# matchupTable = MatchupsTable(list[0], list[1])
-# matchupTable.serialize()
-# G = Game(matchupTable)
-
-# Avec deserialisation de la matchupTable
-# sys.setrecursionlimit(100000)
-# matchupTable = MatchupsTable("saved_matchup_tables/test.json")
-# G = Game(matchupTable)
-# # print(G.matchupTable)
-# tlist = G.siler(matchupTable.getDeckList())
-# print(tlist)
-# print("1st test : ", G.firstTest(tlist))
-# print("Nash Stable :", G.isNashStable(tlist))
-# print("Core Stable :", G.isCoreStable(tlist))
