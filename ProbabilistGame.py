@@ -5,14 +5,9 @@ class ProbabilistGame(Game):
     def __init__ (self, matchupTable, epsilon = 0):
         super().__init__(matchupTable, epsilon)
 
-    def deckUtilitySingleton (self, deck, tierlist):
-        p = tierlist.index(deck)
-        utility = 0
-        for i in range (p+1, len(tierlist)):
-            utility += self.matchupTable.matchupUtility(deck, tierlist[i])
-        return utility
-
     def deckUtility (self,deck, tierlist):
+        if not any(isinstance(i, list) for i in tierlist):
+            tierlist = self.goodTierList(tierlist)
         utility = 0
         deckTier = 0
         for t in range(len(tierlist)) :

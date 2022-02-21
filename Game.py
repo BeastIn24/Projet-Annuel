@@ -9,8 +9,6 @@ class Game:
     def __init__ (self, matchupTable, epsilon = 0):
         self.matchupTable = matchupTable
         self.epsilon = epsilon
-    def deckUtilitySingleton (self, deck, tierlist):
-        pass
 
     def deckUtility (self,deck, tierlist):
         pass
@@ -22,36 +20,38 @@ class Game:
         return gtl
 
     def globalUtility (self, tierlist):
+        if not any(isinstance(i, list) for i in tierlist):
+            tierlist = self.goodTierList(tierlist)
         sum = 0
         for i in range(len(tierlist)) :
             for d in tierlist[i]:
                 sum += self.deckUtility(d, tierlist)
         return sum
 
-    def siler (self, tierlist):
+    def siler (self, tierlist, epsilon = 0):
         maxUtilityTierList = tierlist.copy()
         change = True
-        toolong = 0
-        while change and toolong < 400:
+        while change:
             change = False
             for deck in tierlist:
-                max = self.deckUtilitySingleton(deck, tierlist)
+                gUtility = self.globalUtility(tierlist)
+                max = self.deckUtility(deck, tierlist)
                 for i in range (1, len(tierlist)):
                     potentialTierList = tierlist.copy()
                     potentialTierList.remove(deck)
                     potentialTierList.insert(i, deck)
-                    u = self.deckUtilitySingleton(deck, potentialTierList)
-                    if u > max :
+                    u = self.deckUtility(deck, potentialTierList)
+                    if u > max-epsilon and gUtility < self.globalUtility(potentialTierList) :
                         max = u
                         maxUtilityTierList = potentialTierList.copy()
                         change = True
                 tierlist = maxUtilityTierList.copy()
-            toolong +=1
         return tierlist
 
     def firstTest (self, tierlist):
         for i in range(0, len(tierlist)-1):
             if self.matchupTable.isMatchupPositive(tierlist[i], tierlist[i+1], self.epsilon) < 1 :
+                print(tierlist[i])
                 return False
         return True
 
@@ -59,14 +59,14 @@ class Game:
     def isNashStable (self, tierlist):
         for i in range(0, len(tierlist)):
             deck = tierlist[i]
-            initUtility = self.deckUtilitySingleton(deck, tierlist)
+            initUtility = self.deckUtility(deck, tierlist)
             j = 0
             while (j < len(tierlist)) :
                 if (j != i):
                     potentialTierList = tierlist.copy()
                     potentialTierList.remove(deck)
                     potentialTierList.insert(j, deck)
-                    potentialUtility = self.deckUtilitySingleton(deck, potentialTierList)
+                    potentialUtility = self.deckUtility(deck, potentialTierList)
                     if(potentialUtility > initUtility):
                         return False
                 j += 1
@@ -85,7 +85,7 @@ class Game:
         for subSet in subSets :
             listInitUtility = []
             for deck in subSet :
-                listInitUtility.append(self.deckUtilitySingleton(deck, tierlist))
+                listInitUtility.append(self.deckUtility(deck, tierlist))
             j = 0
             listPotentialUtility = []
             while (j < len(tierlist)) :
@@ -94,7 +94,7 @@ class Game:
                     potentialTierList.remove(deck)
                     potentialTierList.insert(j, deck)
                 for k in range(len(subSet)) :
-                    if(self.deckUtilitySingleton(subSet[k], potentialTierList) > listInitUtility[k]):
+                    if(self.deckUtility(subSet[k], potentialTierList) > listInitUtility[k]):
                         return False
                 j += 1
         return True
