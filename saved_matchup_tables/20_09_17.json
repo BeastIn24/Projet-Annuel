@@ -1,0 +1,806 @@
+{
+ "deckList": [
+  "4C ADVENTURES",
+  "4C ADVENTURES (YORION)",
+  "DIMIR CONTROL",
+  "DIMIR ROGUES",
+  "GRUUL ADVENTURES",
+  "GRUUL AGGRO",
+  "MONO-GREEN AGGRO",
+  "MONO-RED AGGRO",
+  "SULTAI MIDRANGE",
+  "TEMUR ADVENTURES"
+ ],
+ "table": [
+  [
+   {
+    "winrate": null,
+    "interval": null,
+    "nbMatches": null
+   },
+   {
+    "winrate": 57.0,
+    "interval": [
+     47.0,
+     67.0
+    ],
+    "nbMatches": 93.0
+   },
+   {
+    "winrate": 54.5,
+    "interval": [
+     45.0,
+     64.0
+    ],
+    "nbMatches": 99.0
+   },
+   {
+    "winrate": 57.1,
+    "interval": [
+     47.0,
+     67.0
+    ],
+    "nbMatches": 98.0
+   },
+   {
+    "winrate": 51.3,
+    "interval": [
+     42.0,
+     60.0
+    ],
+    "nbMatches": 115.0
+   },
+   {
+    "winrate": 57.6,
+    "interval": [
+     41.0,
+     73.0
+    ],
+    "nbMatches": 33.0
+   },
+   {
+    "winrate": 48.7,
+    "interval": [
+     40.0,
+     58.0
+    ],
+    "nbMatches": 113.0
+   },
+   {
+    "winrate": 52.0,
+    "interval": [
+     45.0,
+     59.0
+    ],
+    "nbMatches": 173.0
+   },
+   {
+    "winrate": 53.0,
+    "interval": [
+     48.0,
+     58.0
+    ],
+    "nbMatches": 364.0
+   },
+   {
+    "winrate": 71.3,
+    "interval": [
+     61.0,
+     79.0
+    ],
+    "nbMatches": 94.0
+   }
+  ],
+  [
+   {
+    "winrate": 43.0,
+    "interval": [
+     33.0,
+     53.0
+    ],
+    "nbMatches": 93.0
+   },
+   {
+    "winrate": null,
+    "interval": null,
+    "nbMatches": null
+   },
+   {
+    "winrate": 75.0,
+    "interval": [
+     41.0,
+     93.0
+    ],
+    "nbMatches": 8.0
+   },
+   {
+    "winrate": 42.9,
+    "interval": [
+     16.0,
+     75.0
+    ],
+    "nbMatches": 7.0
+   },
+   {
+    "winrate": 25.0,
+    "interval": [
+     10.0,
+     50.0
+    ],
+    "nbMatches": 16.0
+   },
+   {
+    "winrate": 66.7,
+    "interval": [
+     30.0,
+     90.0
+    ],
+    "nbMatches": 6.0
+   },
+   {
+    "winrate": 47.1,
+    "interval": [
+     26.0,
+     69.0
+    ],
+    "nbMatches": 17.0
+   },
+   {
+    "winrate": 35.3,
+    "interval": [
+     17.0,
+     59.0
+    ],
+    "nbMatches": 17.0
+   },
+   {
+    "winrate": 35.5,
+    "interval": [
+     21.0,
+     53.0
+    ],
+    "nbMatches": 31.0
+   },
+   {
+    "winrate": 57.1,
+    "interval": [
+     25.0,
+     84.0
+    ],
+    "nbMatches": 7.0
+   }
+  ],
+  [
+   {
+    "winrate": 45.5,
+    "interval": [
+     36.0,
+     55.0
+    ],
+    "nbMatches": 99.0
+   },
+   {
+    "winrate": 25.0,
+    "interval": [
+     7.0,
+     59.0
+    ],
+    "nbMatches": 8.0
+   },
+   {
+    "winrate": null,
+    "interval": null,
+    "nbMatches": null
+   },
+   {
+    "winrate": 88.9,
+    "interval": [
+     57.0,
+     98.0
+    ],
+    "nbMatches": 9.0
+   },
+   {
+    "winrate": 37.5,
+    "interval": [
+     14.0,
+     69.0
+    ],
+    "nbMatches": 8.0
+   },
+   {
+    "winrate": 37.5,
+    "interval": [
+     14.0,
+     69.0
+    ],
+    "nbMatches": 8.0
+   },
+   {
+    "winrate": 31.3,
+    "interval": [
+     14.0,
+     56.0
+    ],
+    "nbMatches": 16.0
+   },
+   {
+    "winrate": 41.2,
+    "interval": [
+     22.0,
+     64.0
+    ],
+    "nbMatches": 17.0
+   },
+   {
+    "winrate": 49.0,
+    "interval": [
+     36.0,
+     62.0
+    ],
+    "nbMatches": 51.0
+   },
+   {
+    "winrate": 15.4,
+    "interval": [
+     4.0,
+     42.0
+    ],
+    "nbMatches": 13.0
+   }
+  ],
+  [
+   {
+    "winrate": 42.9,
+    "interval": [
+     34.0,
+     53.0
+    ],
+    "nbMatches": 98.0
+   },
+   {
+    "winrate": 57.1,
+    "interval": [
+     25.0,
+     84.0
+    ],
+    "nbMatches": 7.0
+   },
+   {
+    "winrate": 11.1,
+    "interval": [
+     2.0,
+     44.0
+    ],
+    "nbMatches": 9.0
+   },
+   {
+    "winrate": null,
+    "interval": null,
+    "nbMatches": null
+   },
+   {
+    "winrate": 50.0,
+    "interval": [
+     29.0,
+     71.0
+    ],
+    "nbMatches": 18.0
+   },
+   {
+    "winrate": 75.0,
+    "interval": [
+     30.0,
+     95.0
+    ],
+    "nbMatches": 4.0
+   },
+   {
+    "winrate": 60.0,
+    "interval": [
+     31.0,
+     83.0
+    ],
+    "nbMatches": 10.0
+   },
+   {
+    "winrate": 40.0,
+    "interval": [
+     22.0,
+     61.0
+    ],
+    "nbMatches": 20.0
+   },
+   {
+    "winrate": 35.4,
+    "interval": [
+     23.0,
+     50.0
+    ],
+    "nbMatches": 48.0
+   },
+   {
+    "winrate": 15.8,
+    "interval": [
+     6.0,
+     38.0
+    ],
+    "nbMatches": 19.0
+   }
+  ],
+  [
+   {
+    "winrate": 48.7,
+    "interval": [
+     40.0,
+     58.0
+    ],
+    "nbMatches": 115.0
+   },
+   {
+    "winrate": 75.0,
+    "interval": [
+     51.0,
+     90.0
+    ],
+    "nbMatches": 16.0
+   },
+   {
+    "winrate": 62.5,
+    "interval": [
+     31.0,
+     86.0
+    ],
+    "nbMatches": 8.0
+   },
+   {
+    "winrate": 50.0,
+    "interval": [
+     29.0,
+     71.0
+    ],
+    "nbMatches": 18.0
+   },
+   {
+    "winrate": null,
+    "interval": null,
+    "nbMatches": null
+   },
+   {
+    "winrate": 50.0,
+    "interval": [
+     15.0,
+     85.0
+    ],
+    "nbMatches": 4.0
+   },
+   {
+    "winrate": 45.5,
+    "interval": [
+     21.0,
+     72.0
+    ],
+    "nbMatches": 11.0
+   },
+   {
+    "winrate": 41.2,
+    "interval": [
+     22.0,
+     64.0
+    ],
+    "nbMatches": 17.0
+   },
+   {
+    "winrate": 58.3,
+    "interval": [
+     44.0,
+     71.0
+    ],
+    "nbMatches": 48.0
+   },
+   {
+    "winrate": 28.6,
+    "interval": [
+     8.0,
+     64.0
+    ],
+    "nbMatches": 7.0
+   }
+  ],
+  [
+   {
+    "winrate": 42.4,
+    "interval": [
+     27.0,
+     59.0
+    ],
+    "nbMatches": 33.0
+   },
+   {
+    "winrate": 33.3,
+    "interval": [
+     10.0,
+     70.0
+    ],
+    "nbMatches": 6.0
+   },
+   {
+    "winrate": 62.5,
+    "interval": [
+     31.0,
+     86.0
+    ],
+    "nbMatches": 8.0
+   },
+   {
+    "winrate": 25.0,
+    "interval": [
+     5.0,
+     70.0
+    ],
+    "nbMatches": 4.0
+   },
+   {
+    "winrate": 50.0,
+    "interval": [
+     15.0,
+     85.0
+    ],
+    "nbMatches": 4.0
+   },
+   {
+    "winrate": null,
+    "interval": null,
+    "nbMatches": null
+   },
+   {
+    "winrate": 66.7,
+    "interval": [
+     21.0,
+     94.0
+    ],
+    "nbMatches": 3.0
+   },
+   {
+    "winrate": 44.4,
+    "interval": [
+     19.0,
+     73.0
+    ],
+    "nbMatches": 9.0
+   },
+   {
+    "winrate": 33.3,
+    "interval": [
+     14.0,
+     61.0
+    ],
+    "nbMatches": 12.0
+   },
+   {
+    "winrate": 50.0,
+    "interval": [
+     19.0,
+     81.0
+    ],
+    "nbMatches": 6.0
+   }
+  ],
+  [
+   {
+    "winrate": 51.3,
+    "interval": [
+     42.0,
+     60.0
+    ],
+    "nbMatches": 113.0
+   },
+   {
+    "winrate": 52.9,
+    "interval": [
+     31.0,
+     74.0
+    ],
+    "nbMatches": 17.0
+   },
+   {
+    "winrate": 68.8,
+    "interval": [
+     44.0,
+     86.0
+    ],
+    "nbMatches": 16.0
+   },
+   {
+    "winrate": 40.0,
+    "interval": [
+     17.0,
+     69.0
+    ],
+    "nbMatches": 10.0
+   },
+   {
+    "winrate": 54.5,
+    "interval": [
+     28.0,
+     79.0
+    ],
+    "nbMatches": 11.0
+   },
+   {
+    "winrate": 33.3,
+    "interval": [
+     6.0,
+     79.0
+    ],
+    "nbMatches": 3.0
+   },
+   {
+    "winrate": null,
+    "interval": null,
+    "nbMatches": null
+   },
+   {
+    "winrate": 62.5,
+    "interval": [
+     39.0,
+     82.0
+    ],
+    "nbMatches": 16.0
+   },
+   {
+    "winrate": 43.8,
+    "interval": [
+     31.0,
+     58.0
+    ],
+    "nbMatches": 48.0
+   },
+   {
+    "winrate": 40.0,
+    "interval": [
+     20.0,
+     64.0
+    ],
+    "nbMatches": 15.0
+   }
+  ],
+  [
+   {
+    "winrate": 48.0,
+    "interval": [
+     41.0,
+     55.0
+    ],
+    "nbMatches": 173.0
+   },
+   {
+    "winrate": 64.7,
+    "interval": [
+     41.0,
+     83.0
+    ],
+    "nbMatches": 17.0
+   },
+   {
+    "winrate": 58.8,
+    "interval": [
+     36.0,
+     78.0
+    ],
+    "nbMatches": 17.0
+   },
+   {
+    "winrate": 60.0,
+    "interval": [
+     39.0,
+     78.0
+    ],
+    "nbMatches": 20.0
+   },
+   {
+    "winrate": 58.8,
+    "interval": [
+     36.0,
+     78.0
+    ],
+    "nbMatches": 17.0
+   },
+   {
+    "winrate": 55.6,
+    "interval": [
+     27.0,
+     81.0
+    ],
+    "nbMatches": 9.0
+   },
+   {
+    "winrate": 37.5,
+    "interval": [
+     19.0,
+     61.0
+    ],
+    "nbMatches": 16.0
+   },
+   {
+    "winrate": null,
+    "interval": null,
+    "nbMatches": null
+   },
+   {
+    "winrate": 38.9,
+    "interval": [
+     27.0,
+     52.0
+    ],
+    "nbMatches": 54.0
+   },
+   {
+    "winrate": 54.5,
+    "interval": [
+     35.0,
+     73.0
+    ],
+    "nbMatches": 22.0
+   }
+  ],
+  [
+   {
+    "winrate": 47.0,
+    "interval": [
+     42.0,
+     52.0
+    ],
+    "nbMatches": 364.0
+   },
+   {
+    "winrate": 64.5,
+    "interval": [
+     47.0,
+     79.0
+    ],
+    "nbMatches": 31.0
+   },
+   {
+    "winrate": 51.0,
+    "interval": [
+     38.0,
+     64.0
+    ],
+    "nbMatches": 51.0
+   },
+   {
+    "winrate": 64.6,
+    "interval": [
+     50.0,
+     77.0
+    ],
+    "nbMatches": 48.0
+   },
+   {
+    "winrate": 41.7,
+    "interval": [
+     29.0,
+     56.0
+    ],
+    "nbMatches": 48.0
+   },
+   {
+    "winrate": 66.7,
+    "interval": [
+     39.0,
+     86.0
+    ],
+    "nbMatches": 12.0
+   },
+   {
+    "winrate": 56.3,
+    "interval": [
+     42.0,
+     69.0
+    ],
+    "nbMatches": 48.0
+   },
+   {
+    "winrate": 61.1,
+    "interval": [
+     48.0,
+     73.0
+    ],
+    "nbMatches": 54.0
+   },
+   {
+    "winrate": null,
+    "interval": null,
+    "nbMatches": null
+   },
+   {
+    "winrate": 42.6,
+    "interval": [
+     30.0,
+     57.0
+    ],
+    "nbMatches": 47.0
+   }
+  ],
+  [
+   {
+    "winrate": 28.7,
+    "interval": [
+     21.0,
+     39.0
+    ],
+    "nbMatches": 94.0
+   },
+   {
+    "winrate": 42.9,
+    "interval": [
+     16.0,
+     75.0
+    ],
+    "nbMatches": 7.0
+   },
+   {
+    "winrate": 84.6,
+    "interval": [
+     58.0,
+     96.0
+    ],
+    "nbMatches": 13.0
+   },
+   {
+    "winrate": 84.2,
+    "interval": [
+     62.0,
+     95.0
+    ],
+    "nbMatches": 19.0
+   },
+   {
+    "winrate": 71.4,
+    "interval": [
+     36.0,
+     92.0
+    ],
+    "nbMatches": 7.0
+   },
+   {
+    "winrate": 50.0,
+    "interval": [
+     19.0,
+     81.0
+    ],
+    "nbMatches": 6.0
+   },
+   {
+    "winrate": 60.0,
+    "interval": [
+     36.0,
+     80.0
+    ],
+    "nbMatches": 15.0
+   },
+   {
+    "winrate": 45.5,
+    "interval": [
+     27.0,
+     65.0
+    ],
+    "nbMatches": 22.0
+   },
+   {
+    "winrate": 57.4,
+    "interval": [
+     43.0,
+     71.0
+    ],
+    "nbMatches": 47.0
+   },
+   {
+    "winrate": null,
+    "interval": null,
+    "nbMatches": null
+   }
+  ]
+ ]
+}

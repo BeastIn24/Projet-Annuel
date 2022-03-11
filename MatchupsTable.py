@@ -1,6 +1,13 @@
 from Matchups import*
 from Parser import*
 
+class ComplexEncoder(json.JSONEncoder):
+    def default(self, obj):
+        if hasattr(obj,'toJSON'):
+            return obj.toJSON()
+        else:
+            return json.JSONEncoder.default(self, obj)
+
 class MatchupsTable :
     def __init__(self, *args):
         #Case where decklist + match up table were given
@@ -10,12 +17,11 @@ class MatchupsTable :
         #Case where path to json file was given
         elif(len(args) == 1):
             with open(args[0]) as file_handler:
-                mut_JSONstr = json.load(file_handler)
-                mut_JSONdict = json.loads(mut_JSONstr)
-                self.deckList = mut_JSONdict["deckList"]
+                mut_JSON = json.load(file_handler)
+                self.deckList = mut_JSON["deckList"]
                 self.table = []
 
-                for mu_list in mut_JSONdict["table"]:
+                for mu_list in mut_JSON["table"]:
                     row = []
                     for mu in mu_list:
                         row.append(Matchups(mu["winrate"],mu["interval"],mu["nbMatches"]))
@@ -38,6 +44,11 @@ class MatchupsTable :
         else :
             return 0
 
+    def getMatchup (self, deck1, deck2):
+        i = self.deckList.index(deck1)
+        j = self.deckList.index(deck2)
+        return self.table[i][j].getWinrate()
+
     def matchupUtility (self, deck1, deck2):
         i = self.deckList.index(deck1)
         j = self.deckList.index(deck2)
@@ -49,9 +60,9 @@ class MatchupsTable :
     #Serialize in a json file
     def serialize(self, file_path):
         with open(file_path, 'w') as fh:
-            json.dump(self.toJSON(), fh, indent=4)
+            json.dump(self.toJSON(), fh, cls=ComplexEncoder, indent = True)
 
     #Save the table as JSON file in case we need it for later experiments
     def toJSON(self):
         #Just to put attributes in a dict automatically
-        return json.dumps(self, default=lambda o: o.__dict__)
+        return dict(deckList=self.deckList, table=self.table)

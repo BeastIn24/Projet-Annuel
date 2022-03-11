@@ -22,3 +22,54 @@ class DeterministGame(Game):
                     elif self.matchupTable.isMatchupPositive(deck, tierlist[i][j]) == 0:
                         utility -= 1
         return utility
+
+    def arnold(self, tierlist):
+        tierQueue = []
+        siler = self.siler(tierlist)
+        print(siler)
+        i = len(tierlist)-1
+        c = 0
+        while i > 1:
+            if self.matchupTable.isMatchupPositive(siler[i], siler[i-2], self.epsilon):
+                nouveauTier = [siler[i], siler[i-1], siler[i-2]]
+                tierQueue.insert(0, nouveauTier)
+                i -= 3
+                c += 3
+            else :
+                tierQueue.insert(0, [siler[i]])
+                i -= 1
+                c += 1
+        if len(tierlist) - c == 2 :
+            tierQueue.insert(0, [siler[1]])
+            tierQueue.insert(0, [siler[0]])
+        if len(tierlist) - c == 1 :
+            tierQueue.insert(0, [siler[0]])
+
+        change = True
+        while change:
+            change = False
+            j = len(tierQueue)-1
+            while j > 1 :
+                potentialTier = []
+                potentialTier.extend(tierQueue[j])
+                potentialTier.extend(tierQueue[j-1])
+                potentialTier.extend(tierQueue[j-2])
+                ok = True
+                for deck1 in potentialTier :
+                    nbMuPos = 0
+                    for deck2 in potentialTier :
+                        if deck1 != deck2 :
+                            if self.matchupTable.isMatchupPositive(deck1, deck2, self.epsilon):
+                                nbMuPos += 1
+                    if not (float(nbMuPos)/len(potentialTier)) >= 0.5 :
+                         ok = False
+                if ok :
+                    tierQueue.remove(tierQueue[j])
+                    tierQueue.remove(tierQueue[j-1])
+                    tierQueue.remove(tierQueue[j-2])
+                    tierQueue.insert(j-2, potentialTier)
+                    change = True
+                    j -= 3
+                else :
+                    j -= 1
+            return tierQueue

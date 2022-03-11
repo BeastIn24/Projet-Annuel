@@ -9,7 +9,7 @@ class Matchups :
     #Ensure that the class is JSON encodable, says how will the instance will be encoded
     def toJSON(self):
         #Just to put attributes in a dict automatically
-        return json.dumps(self, default=lambda o: o.__dict__)
+        return dict(winrate=self.winrate, interval=self.interval, nbMatches = self.nbMatches)
 
     def __str__(self):
         return f'{self.winrate}, {self.interval}, {self.nbMatches}'
