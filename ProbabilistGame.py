@@ -51,15 +51,8 @@ class ProbabilistGame(Game):
                 potentialTier.extend(tierQueue[j])
                 potentialTier.extend(tierQueue[j-1])
                 potentialTier.extend(tierQueue[j-2])
-                ok = True
-                for deck1 in potentialTier :
-                    probaSum = 0
-                    for deck2 in potentialTier :
-                        if deck1 != deck2 :
-                            probaSum += self.matchupTable.getMatchup(deck1, deck2)
-                    if not (probaSum/(len(potentialTier)-1)) >= 50 :
-                         ok = False
-                if ok :
+
+                if self.isTierBalanced(potentialTier):
                     tierQueue.remove(tierQueue[j])
                     tierQueue.remove(tierQueue[j-1])
                     tierQueue.remove(tierQueue[j-2])
@@ -68,4 +61,14 @@ class ProbabilistGame(Game):
                     j -= 3
                 else :
                     j -= 1
-            return tierQueue
+        return tierQueue
+
+    def isTierBalanced(self, tier):
+        for deck1 in tier :
+            probaSum = 0
+            for deck2 in tier :
+                if deck1 != deck2 :
+                    probaSum += self.matchupTable.getMatchup(deck1, deck2)
+            if not (probaSum/(len(tier)-1)) >= 50 :
+                 return False
+        return True

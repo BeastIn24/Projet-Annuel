@@ -140,7 +140,11 @@ class Game:
                         # Si au moins une déviation est possible notre tierlist n'est pas CIS.
                         #print("Matrice des utilitées avant déviation : ",initUtilities)
                         #print("Matrice des utilitées apress déviation : ",potentialUtilities)
-                        if(self.isDeviationPossible(potentialTierList, potentialUtilities, i, k)):
+                        if(self.isDeviationPossible(potentialTierList, potentialUtilities, deck, i, k)):
+                            # print("K : ", k)
+                            # print("Apres swap du deck : ", deck)
+                            # print("Matrice des utilitées avant déviation : ",initUtilities)
+                            # print("Matrice des utilitées apress déviation : ",potentialUtilities)
                             return False
         return True
 
@@ -149,8 +153,10 @@ class Game:
 
     # i => indice du tier de départ
     # k => indice du tier d'arrivé
-    def isDeviationPossible(self, potentialTierList, potentialUtilities, i, k):
+    def isDeviationPossible(self, potentialTierList, potentialUtilities, deck, i, k):
         # l : indice des decks du tier de départ i dans potentialTierList
+        #Keep track of utility changes
+        isDeviationUseful = False
         for l in range(len(potentialTierList[i])):
             deck2 = potentialTierList[i][l]
 
@@ -159,8 +165,15 @@ class Game:
             #print("initUtility : ", potentialUtilities[i][l])
             #print("newUtility : ", self.deckUtility(deck2, potentialTierList))
             #Si un des decks du tier de départ perd en utilité, la déviation n'est pas possible
-            if self.deckUtility(deck2, potentialTierList) < potentialUtilities[i][l]:
+            newUtility = self.deckUtility(deck2, potentialTierList)
+            #Pour ne pas que le test croit qu'un deck du tier d'arrivé puisse gagner de l'utilité si le mu est à 50% de winrate.
+            if(self.matchupTable.getMatchup(deck, deck2) == 50):
+                newUtility -= 1
+            if newUtility < potentialUtilities[i][l]:
                 return False
+            if newUtility > potentialUtilities[i][l]:
+                # print("new utility : ", newUtility, ">", potentialUtilities[i][l])
+                isDeviationUseful = True
         # m : indice des decks du tier d'arrivé k dans potentialTierList
         for m in range(len(potentialTierList[k])):
             deck2 = potentialTierList[k][m]
@@ -169,7 +182,16 @@ class Game:
             #print("initUtility : ", potentialUtilities[k][m])
             #print("newUtility : ", self.deckUtility(deck2, potentialTierList))
             #Si un des decks du tier d'arrivé perd en utilité la déviation n'est pas possible
-            if self.deckUtility(deck2, potentialTierList) < potentialUtilities[k][m]:
+            newUtility = self.deckUtility(deck2, potentialTierList)
+            #Pour ne pas que le test croit qu'un deck du tier d'arrivé puisse gagner de l'utilité si le mu est à 50% de winrate.
+            if(self.matchupTable.getMatchup(deck, deck2) == 50):
+                newUtility -= 1
+            if newUtility < potentialUtilities[k][m]:
                 return False
-
-        return True
+            if newUtility > potentialUtilities[k][m]:
+                # print("Pour le tier",k," d'arrivée : ")
+                # print("deck2 : ", deck2, " pos : (",k,",",m,")")
+                # print("new utility : ", newUtility, ">", potentialUtilities[k][m])
+                isDeviationUseful = True
+        # Si aucune utilités n'a été augmenté, on renvoie faux
+        return isDeviationUseful

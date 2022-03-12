@@ -41,13 +41,12 @@ if G.isNashStable(tlist) :
     print ("La coalition est stable au sens de Nash.")
 else :
     print ("La coalition n'est pas stable au sens de Nash.")
-
+"""
 if G.isCoreStable(tlist) :
     print ("La coalition est stable au sens du coeur.")
 else :
     print ("La coalition n'est pas stable au sens du coeur.")
-
-
+"""
 tlist2 = G.arnold(matchupTable.getDeckList())
 print("\nCoalition obtenue avec Arnold : \n",  tlist2)
 print("Utilité globale : ", G.globalUtility(tlist2))

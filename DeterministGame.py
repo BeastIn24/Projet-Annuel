@@ -26,7 +26,6 @@ class DeterministGame(Game):
     def arnold(self, tierlist):
         tierQueue = []
         siler = self.siler(tierlist)
-        print(siler)
         i = len(tierlist)-1
         c = 0
         while i > 1:
@@ -72,4 +71,4 @@ class DeterministGame(Game):
                     j -= 3
                 else :
                     j -= 1
-            return tierQueue
+        return tierQueue
